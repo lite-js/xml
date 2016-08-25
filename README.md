@@ -22,5 +22,5 @@ in browsers:
 
 ## [API](./doc/api.md)
 
-## [RoadMap](./doc/roadmap.md)
+## [roadmap](./doc/roadmap.md)
 
