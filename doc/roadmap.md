@@ -5,8 +5,6 @@ roadmap
 
 - [ ] XMLLite.parse(string)
 - [ ] XMLLite.serialize(Doc)
-- [ ] XMLLite.toJSON(Doc/string)
-- [ ] XMLLite.fromJSON(object/string)
 
 ### 0.2.0 ~ 0.9.0 (features added)
 

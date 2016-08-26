@@ -22,5 +22,7 @@ in browsers:
 
 ## [API](./doc/api.md)
 
+## [json spec](./doc/json-spec.md)
+
 ## [roadmap](./doc/roadmap.md)
 
