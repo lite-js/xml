@@ -1,0 +1,144 @@
+[
+  {
+    "type": "declaration",
+    "tag": "xml",
+    "attributes": {
+      "version": "1.0",
+      "encoding": "UTF-8"
+    }
+  },
+  {
+    "type": "declaration",
+    "tag": "xml-stylesheet",
+    "attributes": {
+      "type": "text/css",
+      "href": "./bookstore.css"
+    }
+  },
+  {
+    "type": "comment",
+    "text": " some comments "
+  },
+  {
+    "type": "element",
+    "tag": "bookstore",
+    "attributes": {
+    },
+    "children": [
+      {
+        "type": "element",
+        "tag": "book",
+        "attributes": {
+          "category": "COOKING"
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "title",
+            "attributes": {
+              "lang": "en"
+            },
+            "text": "Everyday Italian"
+          },
+          {
+            "type": "element",
+            "tag": "author",
+            "attributes": {
+            },
+            "text": "Giada De Laurentiis"
+          },
+          {
+            "type": "element",
+            "tag": "year",
+            "attributes": {
+            },
+            "text": "2005"
+          },
+          {
+            "type": "element",
+            "tag": "price",
+            "attributes": {
+            },
+            "text": "30.00"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "book",
+        "attributes": {
+          "category": "CHILDREN"
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "title",
+            "attributes": {
+              "lang": "en"
+            },
+            "text": "Harry Potter"
+          },
+          {
+            "type": "element",
+            "tag": "author",
+            "attributes": {
+            },
+            "text": "J K. Rowling"
+          },
+          {
+            "type": "element",
+            "tag": "year",
+            "attributes": {
+            },
+            "text": "2005"
+          },
+          {
+            "type": "element",
+            "tag": "price",
+            "attributes": {
+            },
+            "text": "29.99"
+          }
+        ]
+      },
+      {
+        "type": "element",
+        "tag": "book",
+        "attributes": {
+          "category": "WEB"
+        },
+        "children": [
+          {
+            "type": "element",
+            "tag": "title",
+            "attributes": {
+              "lang": "en"
+            },
+            "text": "Learning XML"
+          },
+          {
+            "type": "element",
+            "tag": "author",
+            "attributes": {
+            },
+            "text": "Erik T. Ray"
+          },
+          {
+            "type": "element",
+            "tag": "year",
+            "attributes": {
+            },
+            "text": "2003"
+          },
+          {
+            "type": "element",
+            "tag": "price",
+            "attributes": {
+            },
+            "text": "39.95"
+          }
+        ]
+      }
+    ]
+  }
+]
