@@ -1,0 +1,76 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "tag": "xml",
+      "type": "ProcessingInstruction"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "tag": "",
+              "type": "TextNode",
+              "text": "George"
+            }
+          ],
+          "tag": "to",
+          "type": "Element"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "tag": "",
+              "type": "TextNode",
+              "text": "John"
+            }
+          ],
+          "tag": "from",
+          "type": "Element"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "tag": "",
+              "type": "TextNode",
+              "text": "Reminder"
+            }
+          ],
+          "tag": "heading",
+          "type": "Element"
+        },
+        {
+          "attributes": {},
+          "children": [
+            {
+              "attributes": {},
+              "children": [],
+              "tag": "",
+              "type": "TextNode",
+              "text": "Don't forget the meeting!"
+            }
+          ],
+          "tag": "body",
+          "type": "Element"
+        }
+      ],
+      "tag": "note",
+      "type": "Element"
+    }
+  ],
+  "tag": "",
+  "type": "Document"
+}

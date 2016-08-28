@@ -1,7 +1,8 @@
 const assert = chai.assert;
 import XMLLite from 'xml-lite';
 
-describe('dom2js', () => {
+describe('xml2js', () => {
+  console.log(XMLLite.env);
   const testXML = `<p>
   <text-content>hello, world!</text-content>
   <a href="https://github.com/leungwensen/xml-lite">

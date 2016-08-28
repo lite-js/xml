@@ -1,0 +1,233 @@
+{
+  "attributes": {},
+  "children": [
+    {
+      "attributes": {},
+      "children": [],
+      "tag": "xml",
+      "type": "ProcessingInstruction"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "tag": "xml-stylesheet",
+      "type": "ProcessingInstruction"
+    },
+    {
+      "attributes": {},
+      "children": [],
+      "tag": "",
+      "type": "Comment"
+    },
+    {
+      "attributes": {},
+      "children": [
+        {
+          "attributes": {
+            "category": "COOKING"
+          },
+          "children": [
+            {
+              "attributes": {
+                "lang": "en"
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "Everyday Italian"
+                }
+              ],
+              "tag": "title",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "Giada De Laurentiis"
+                }
+              ],
+              "tag": "author",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "2005"
+                }
+              ],
+              "tag": "year",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "30.00"
+                }
+              ],
+              "tag": "price",
+              "type": "Element"
+            }
+          ],
+          "tag": "book",
+          "type": "Element"
+        },
+        {
+          "attributes": {
+            "category": "CHILDREN"
+          },
+          "children": [
+            {
+              "attributes": {
+                "lang": "en"
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "Harry Potter"
+                }
+              ],
+              "tag": "title",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "J K. Rowling"
+                }
+              ],
+              "tag": "author",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "2005"
+                }
+              ],
+              "tag": "year",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "29.99"
+                }
+              ],
+              "tag": "price",
+              "type": "Element"
+            }
+          ],
+          "tag": "book",
+          "type": "Element"
+        },
+        {
+          "attributes": {
+            "category": "WEB"
+          },
+          "children": [
+            {
+              "attributes": {
+                "lang": "en"
+              },
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "Learning XML"
+                }
+              ],
+              "tag": "title",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "Erik T. Ray"
+                }
+              ],
+              "tag": "author",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "2003"
+                }
+              ],
+              "tag": "year",
+              "type": "Element"
+            },
+            {
+              "attributes": {},
+              "children": [
+                {
+                  "attributes": {},
+                  "children": [],
+                  "tag": "",
+                  "type": "TextNode",
+                  "text": "39.95"
+                }
+              ],
+              "tag": "price",
+              "type": "Element"
+            }
+          ],
+          "tag": "book",
+          "type": "Element"
+        }
+      ],
+      "tag": "bookstore",
+      "type": "Element"
+    }
+  ],
+  "tag": "",
+  "type": "Document"
+}
