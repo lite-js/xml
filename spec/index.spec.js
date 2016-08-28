@@ -1,5 +1,6 @@
 mocha.setup('bdd');
 
-// require('./xxx.spec');
+require('./dom2js.spec');
+require('./xml2js.spec');
 
 mocha.run();

@@ -53,6 +53,7 @@ module.exports = {
   },
   externals: {
     'jquery': 'jQuery',
+    'xml-lite': 'XMLLite',
   },
   plugins: [
     new ExtractTextPlugin('[name].css'),
