@@ -1,6 +1,7 @@
-const assert = chai.assert;
 import $ from 'jquery';
 import XMLLite from 'xml-lite';
+
+const assert = chai.assert;
 
 describe('xml2js', function description() {
   this.timeout(10000); // 10 seconds before timeout
@@ -8,11 +9,10 @@ describe('xml2js', function description() {
   function nextFixture(fixtues) {
     if (fixtues.length) {
       const fixture = fixtues.shift();
-      it(`test case: ${fixture}`, (done) => {
+      it(`xml2js: spec/fixtures/${fixture}.xml`, (done) => {
         $.get(`./fixtures/${fixture}.xml`,
           (xmlContent) => {
             $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
-              console.log(XMLLite.xml2js(xmlContent), jsonContent);
               assert.deepEqual(
                 XMLLite.xml2js(xmlContent),
                 jsonContent,

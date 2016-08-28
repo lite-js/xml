@@ -1,5 +1,6 @@
-const assert = chai.assert;
 import XMLLite from 'xml-lite';
+
+const assert = chai.assert;
 
 describe('dom2js', () => {
   const testDiv = document.createElement('div');
@@ -10,8 +11,6 @@ describe('dom2js', () => {
   testDiv.setAttribute('class', 'test-div');
   testDiv.setAttribute('data-hello', 'world');
   const elementObj = XMLLite.dom2js(testDiv);
-
-  console.log(testDiv, elementObj);
 
   it('Element: type and tag', () => {
     assert.equal(
@@ -36,8 +35,4 @@ describe('dom2js', () => {
       'XMLLite.dom2js() not working: something wrong with the attributes.'
     );
   });
-
-  const documentObj = XMLLite.dom2js(document);
-
-  console.log(documentObj);
 });
