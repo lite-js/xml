@@ -2,13 +2,19 @@
   "attributes": {},
   "children": [
     {
-      "attributes": {},
+      "attributes": {
+        "target": "PITarget",
+        "data": "PIContent"
+      },
       "children": [],
-      "tag": "xml",
+      "tag": "PITarget",
       "type": "ProcessingInstruction"
     },
     {
-      "attributes": {},
+      "attributes": {
+        "target": "xml-stylesheet",
+        "data": "type=\"text/css\" href=\"./bootstore.css\""
+      },
       "children": [],
       "tag": "xml-stylesheet",
       "type": "ProcessingInstruction"

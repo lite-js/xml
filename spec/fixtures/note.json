@@ -3,12 +3,6 @@
   "children": [
     {
       "attributes": {},
-      "children": [],
-      "tag": "xml",
-      "type": "ProcessingInstruction"
-    },
-    {
-      "attributes": {},
       "children": [
         {
           "attributes": {},

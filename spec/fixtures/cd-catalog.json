@@ -2,13 +2,10 @@
   "attributes": {},
   "children": [
     {
-      "attributes": {},
-      "children": [],
-      "tag": "xml",
-      "type": "ProcessingInstruction"
-    },
-    {
-      "attributes": {},
+      "attributes": {
+        "target": "xml-stylesheet",
+        "data": "type=\"text/css\" href=\"./cd-catalog.css\""
+      },
       "children": [],
       "tag": "xml-stylesheet",
       "type": "ProcessingInstruction"

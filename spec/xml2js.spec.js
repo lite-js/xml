@@ -1,23 +1,34 @@
 const assert = chai.assert;
+import $ from 'jquery';
 import XMLLite from 'xml-lite';
 
-describe('xml2js', () => {
-  console.log(XMLLite.env);
-  const testXML = `<p>
-  <text-content>hello, world!</text-content>
-  <a href="https://github.com/leungwensen/xml-lite">
-    maintaining xml in pure javascript (IN BOTH NODE.JS &amp; BROWSERS)
-  </a>
-</p>`;
-  console.log(XMLLite.uglify(testXML, true));
-  const xmlObj = XMLLite.xml2js(testXML);
+describe('xml2js', function description() {
+  this.timeout(10000); // 10 seconds before timeout
 
-  console.log(xmlObj);
+  function nextFixture(fixtues) {
+    if (fixtues.length) {
+      const fixture = fixtues.shift();
+      it(`test case: ${fixture}`, (done) => {
+        $.get(`./fixtures/${fixture}.xml`,
+          (xmlContent) => {
+            $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
+              console.log(XMLLite.xml2js(xmlContent), jsonContent);
+              assert.deepEqual(
+                XMLLite.xml2js(xmlContent),
+                jsonContent,
+                `test case by fixture ${fixture} not passed`
+              );
+              done();
+            });
+          },
+          'text'
+        );
+      });
+      nextFixture(fixtues);
+    }
+  }
 
-  it('Element: type and tag', () => {
-  });
-
-  it('Element: attributes', () => {
-
+  $.get('./fixtures/files.json', (files) => {
+    nextFixture(files);
   });
 });
