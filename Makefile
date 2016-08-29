@@ -16,4 +16,4 @@ install:
 test:
 publish:
 	npm publish
-	cnpm sync xmind
+	cnpm sync xml-lite
