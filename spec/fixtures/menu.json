@@ -2,7 +2,9 @@
   "attributes": {},
   "children": [
     {
-      "attributes": {},
+      "attributes": {
+        "data": " a simple breakfast menu "
+      },
       "children": [],
       "tag": "",
       "type": "Comment"

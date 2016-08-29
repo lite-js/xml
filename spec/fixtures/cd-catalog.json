@@ -11,7 +11,9 @@
       "type": "ProcessingInstruction"
     },
     {
-      "attributes": {},
+      "attributes": {
+        "data": " some comments "
+      },
       "children": [],
       "tag": "",
       "type": "Comment"
