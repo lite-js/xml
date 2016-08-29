@@ -47,9 +47,7 @@ function renderTemplates() {
       return cb();
     }
 
-    if (file.isStream()) {
-      this.emit('error', new gutil.PluginError('template2module', 'Streaming not supported'));
-    }
+    if (file.isStream()) this.emit('error', new gutil.PluginError('template2module', 'Streaming not supported'));
 
     try {
       gutil.log(file.path);
