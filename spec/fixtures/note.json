@@ -1,70 +1,56 @@
 {
-  "attributes": {},
+  "type": "Document",
   "children": [
     {
-      "attributes": {},
+      "type": "Element",
+      "tag": "note",
       "children": [
         {
-          "attributes": {},
+          "type": "Element",
+          "tag": "to",
           "children": [
             {
-              "attributes": {},
-              "children": [],
-              "tag": "",
               "type": "TextNode",
               "text": "George"
             }
           ],
-          "tag": "to",
-          "type": "Element"
+          "attributes": {}
         },
         {
-          "attributes": {},
+          "type": "Element",
+          "tag": "from",
           "children": [
             {
-              "attributes": {},
-              "children": [],
-              "tag": "",
               "type": "TextNode",
               "text": "John"
             }
           ],
-          "tag": "from",
-          "type": "Element"
+          "attributes": {}
         },
         {
-          "attributes": {},
+          "type": "Element",
+          "tag": "heading",
           "children": [
             {
-              "attributes": {},
-              "children": [],
-              "tag": "",
               "type": "TextNode",
               "text": "Reminder"
             }
           ],
-          "tag": "heading",
-          "type": "Element"
+          "attributes": {}
         },
         {
-          "attributes": {},
+          "type": "Element",
+          "tag": "body",
           "children": [
             {
-              "attributes": {},
-              "children": [],
-              "tag": "",
               "type": "TextNode",
               "text": "Don't forget the meeting!"
             }
           ],
-          "tag": "body",
-          "type": "Element"
+          "attributes": {}
         }
       ],
-      "tag": "note",
-      "type": "Element"
+      "attributes": {}
     }
-  ],
-  "tag": "",
-  "type": "Document"
+  ]
 }

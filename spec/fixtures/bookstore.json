@@ -1,241 +1,191 @@
 {
-  "attributes": {},
+  "type": "Document",
   "children": [
     {
-      "attributes": {
-        "target": "PITarget",
-        "data": "PIContent"
-      },
-      "children": [],
+      "type": "ProcessingInstruction",
       "tag": "PITarget",
-      "type": "ProcessingInstruction"
+      "data": "PIContent"
     },
     {
-      "attributes": {
-        "target": "xml-stylesheet",
-        "data": "type=\"text/css\" href=\"./bootstore.css\""
-      },
-      "children": [],
+      "type": "ProcessingInstruction",
       "tag": "xml-stylesheet",
-      "type": "ProcessingInstruction"
+      "data": "type=\"text/css\" href=\"./bootstore.css\""
     },
     {
-      "attributes": {
-        "data": " some comments "
-      },
-      "children": [],
-      "tag": "",
-      "type": "Comment"
+      "type": "Comment",
+      "data": " some comments "
     },
     {
-      "attributes": {},
+      "type": "Element",
+      "tag": "bookstore",
       "children": [
         {
-          "attributes": {
-            "category": "COOKING"
-          },
+          "type": "Element",
+          "tag": "book",
           "children": [
             {
-              "attributes": {
-                "lang": "en"
-              },
+              "type": "Element",
+              "tag": "title",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "Everyday Italian"
                 }
               ],
-              "tag": "title",
-              "type": "Element"
+              "attributes": {
+                "lang": "en"
+              }
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "author",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "Giada De Laurentiis"
                 }
               ],
-              "tag": "author",
-              "type": "Element"
+              "attributes": {}
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "year",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "2005"
                 }
               ],
-              "tag": "year",
-              "type": "Element"
+              "attributes": {}
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "price",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "30.00"
                 }
               ],
-              "tag": "price",
-              "type": "Element"
+              "attributes": {}
             }
           ],
-          "tag": "book",
-          "type": "Element"
+          "attributes": {
+            "category": "COOKING"
+          }
         },
         {
-          "attributes": {
-            "category": "CHILDREN"
-          },
+          "type": "Element",
+          "tag": "book",
           "children": [
             {
-              "attributes": {
-                "lang": "en"
-              },
+              "type": "Element",
+              "tag": "title",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "Harry Potter"
                 }
               ],
-              "tag": "title",
-              "type": "Element"
+              "attributes": {
+                "lang": "en"
+              }
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "author",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "J K. Rowling"
                 }
               ],
-              "tag": "author",
-              "type": "Element"
+              "attributes": {}
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "year",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "2005"
                 }
               ],
-              "tag": "year",
-              "type": "Element"
+              "attributes": {}
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "price",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "29.99"
                 }
               ],
-              "tag": "price",
-              "type": "Element"
+              "attributes": {}
             }
           ],
-          "tag": "book",
-          "type": "Element"
+          "attributes": {
+            "category": "CHILDREN"
+          }
         },
         {
-          "attributes": {
-            "category": "WEB"
-          },
+          "type": "Element",
+          "tag": "book",
           "children": [
             {
-              "attributes": {
-                "lang": "en"
-              },
+              "type": "Element",
+              "tag": "title",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "Learning XML"
                 }
               ],
-              "tag": "title",
-              "type": "Element"
+              "attributes": {
+                "lang": "en"
+              }
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "author",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "Erik T. Ray"
                 }
               ],
-              "tag": "author",
-              "type": "Element"
+              "attributes": {}
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "year",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "2003"
                 }
               ],
-              "tag": "year",
-              "type": "Element"
+              "attributes": {}
             },
             {
-              "attributes": {},
+              "type": "Element",
+              "tag": "price",
               "children": [
                 {
-                  "attributes": {},
-                  "children": [],
-                  "tag": "",
                   "type": "TextNode",
                   "text": "39.95"
                 }
               ],
-              "tag": "price",
-              "type": "Element"
+              "attributes": {}
             }
           ],
-          "tag": "book",
-          "type": "Element"
+          "attributes": {
+            "category": "WEB"
+          }
         }
       ],
-      "tag": "bookstore",
-      "type": "Element"
+      "attributes": {}
     }
-  ],
-  "tag": "",
-  "type": "Document"
+  ]
 }

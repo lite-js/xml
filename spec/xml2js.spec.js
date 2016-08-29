@@ -13,6 +13,7 @@ describe('xml2js', function description() {
         $.get(`./fixtures/${fixture}.xml`,
           (xmlContent) => {
             $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
+              console.log(XMLLite.xml2js(xmlContent), jsonContent);
               assert.deepEqual(
                 XMLLite.xml2js(xmlContent),
                 jsonContent,
