@@ -33,6 +33,7 @@ supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
 yes | beautify |  | String xml, (String or Number) step  | String str | beautify xml string 
 yes | uglify   |  | String xml, Boolean preserveComments | String str | uglify xml string
+yes | sanitize |  | String xml, Boolean reverse          | String str | escape or unescape "&", "<" and ">"
 
 ### converting
 
@@ -41,7 +42,7 @@ supported | name | alias | parameters | return value | description
 yes | dom2js   |  | Node node                                 | Object obj   | converting a Node instance into js object
 yes | xml2js   |  | String xml                                | Object obj   | converting an xml string into js object
 yes | xml2json |  | String xml, String replacer, String space | String json  | converting an xml string into json string
-no  | js2xml   |  | Object obj, Object options                | String xml   | converting an object into xml string
-no  | json2xml |  | String json, Object options               | String xml   | converting a json string into xml string
-no  | js2dom   |  | Object obj                                | Node doc     | converting an object into a Node instance
-no  | json2dom |  | String json                               | Node doc     | converting a json string into a Node instance
+yes | js2xml   |  | Object obj, Object options                | String xml   | converting an object into xml string
+yes | json2xml |  | String json, Object options               | String xml   | converting a json string into xml string
+yes | js2dom   |  | Object obj                                | Node doc     | converting an object into a Node instance
+yes | json2dom |  | String json                               | Node doc     | converting a json string into a Node instance

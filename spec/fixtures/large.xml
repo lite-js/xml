@@ -1,5 +1,5 @@
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-  <soapenv:Header/>
+  <soapenv:Header></soapenv:Header>
   <soapenv:Body>
     <findInterminglingResponse xmlns="http://www.ebay.com/marketplace/search/v1/services">
       <ack>Success</ack>
@@ -1583,7 +1583,7 @@
       <queryTime>157</queryTime>
       <executionTime>204
       </executionTime>
-      <backendTestResponse/>
+      <backendTestResponse></backendTestResponse>
     </findInterminglingResponse>
   </soapenv:Body>
 </soapenv:Envelope>

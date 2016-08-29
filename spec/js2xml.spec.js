@@ -3,19 +3,19 @@ import XMLLite from 'xml-lite';
 
 const assert = chai.assert;
 
-describe('xml2js', function description() {
+describe('js2xml', function description() {
   this.timeout(10000); // 10 seconds before timeout
 
   function nextFixture(fixtues) {
     if (fixtues.length) {
       const fixture = fixtues.shift();
-      it(`xml2js: spec/fixtures/${fixture}.xml`, (done) => {
+      it(`js2xml: spec/fixtures/${fixture}.xml`, (done) => {
         $.get(`./fixtures/${fixture}.xml`,
           (xmlContent) => {
             $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
-              assert.deepEqual(
-                XMLLite.xml2js(xmlContent),
-                jsonContent,
+              assert.equal(
+                XMLLite.js2xml(jsonContent),
+                XMLLite.uglify(xmlContent),
                 `test case by fixture ${fixture} not passed`
               );
               done();

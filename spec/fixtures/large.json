@@ -94,7 +94,7 @@
                       "children": [
                         {
                           "type": "TextNode",
-                          "text": "<a>qds=0.1723&!_dcat_leaf=617,163826,617,163826,15077&pct=94.84&nai=44&nhalf=0&ncbt=0&nmq=2&!SIBE=avatar+blue+ray+3d,JPIA9PMIDQ8:7M&auctions=44&nbi=22&iat=4&trsi=0&prof=5841&nabi=16&fixedprices=4&!ptrid=Pr1062_10,Pr5841_2&pcc=2&nProdSur=2&tcatid=617</a>"
+                          "text": "&lt;a&gt;qds=0.1723&amp;!_dcat_leaf=617,163826,617,163826,15077&amp;pct=94.84&amp;nai=44&amp;nhalf=0&amp;ncbt=0&amp;nmq=2&amp;!SIBE=avatar+blue+ray+3d,JPIA9PMIDQ8:7M&amp;auctions=44&amp;nbi=22&amp;iat=4&amp;trsi=0&amp;prof=5841&amp;nabi=16&amp;fixedprices=4&amp;!ptrid=Pr1062_10,Pr5841_2&amp;pcc=2&amp;nProdSur=2&amp;tcatid=617&lt;/a&gt;"
                         }
                       ],
                       "attributes": {}
@@ -1075,7 +1075,7 @@
                               "children": [
                                 {
                                   "type": "TextNode",
-                                  "text": "NEW & SEALED 3D Blu-ray Panasonic Exclusive \"AVATAR\" FAST FREE SHIPPING!"
+                                  "text": "NEW &amp; SEALED 3D Blu-ray Panasonic Exclusive \"AVATAR\" FAST FREE SHIPPING!"
                                 }
                               ],
                               "attributes": {}
@@ -8250,7 +8250,7 @@
                               "children": [
                                 {
                                   "type": "TextNode",
-                                  "text": "NEW- AVATAR 3D Blu-Ray Movie- PANASONIC EXCLUSIVE & FACTORY SEALED!!"
+                                  "text": "NEW- AVATAR 3D Blu-Ray Movie- PANASONIC EXCLUSIVE &amp; FACTORY SEALED!!"
                                 }
                               ],
                               "attributes": {}
