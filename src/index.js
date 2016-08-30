@@ -60,7 +60,7 @@ jsonEditor.on('change', () => {
   }
 });
 
-$.get('../spec/fixtures/bookstore.xml', (xmlContent) => {
+$.get('./spec/fixtures/bookstore.xml', (xmlContent) => {
   xmlEditor.getDoc().setValue(xmlContent);
   xml2json();
 }, 'text');
