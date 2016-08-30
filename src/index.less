@@ -1,0 +1,98 @@
+@import "../node_modules/lesshat/lesshat";
+@import "../node_modules/normalize.css/normalize.css";
+
+html, body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+small {
+  color: grey;
+}
+
+.flex {
+  .display(flex);
+  .flex-direction(column);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+
+.header-container {
+  text-align: center;
+}
+
+.editor-container {
+  .flex(1);
+  overflow-y: auto;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+.col {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  float: left;
+  overflow-y: auto;
+}
+
+.source {
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  min-height: 500px;
+  .box-sizing(border-box);
+}
+
+.CodeMirror {
+  height: 100%;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+.github-corner svg {
+  fill: gray;
+  color: #fff;
+}
+
+.github-corner:hover svg {
+  fill: #337ab7;
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0deg)
+  }
+  20%, 60% {
+    transform: rotate(-25deg)
+  }
+  40%, 80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}

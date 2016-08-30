@@ -5,6 +5,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
+    'dist/index': path.resolve(__dirname, './src/index.js'),
     'dist/xml-lite': path.resolve(__dirname, './lib/index-browser.js'),
     'spec/index': path.resolve(__dirname, './spec/index.spec.js'),
   },
@@ -52,6 +53,7 @@ module.exports = {
     ]
   },
   externals: {
+    'codemirror': 'CodeMirror',
     'jquery': 'jQuery',
     'xml-lite': 'XMLLite',
   },
