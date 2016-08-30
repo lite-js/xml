@@ -20,7 +20,7 @@ XMLLite.eachChildNode();
 // ...
 ```
 
-Actually, you can get the js object from `XMLLite.xml2js(xml)`, do what ever you want, and convert it back to xml again with `XMLLite.js2xml(obj)`.
+Actually, you can get the js object from `XMLLite.xml2js(xml)`, do whatever you want, and convert it back to xml again with `XMLLite.js2xml(obj)`.
 
 ## why?
 
