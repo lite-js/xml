@@ -16,11 +16,10 @@ module.exports = (elements) => {
     if (obj.children) {
       lang.each(obj.children, (child) => {
         countOne(child);
-      })
+      });
     }
   }
 
   countOne(elements);
   return count;
 };
-

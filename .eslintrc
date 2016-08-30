@@ -15,7 +15,7 @@
     "comma-dangle": 0,
     "func-names": 0,
     "global-require": 1,
-    "import/no-extraneous-dependencies": 1,
+    "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": 1,
     "key-spacing": 0,
     "new-cap": 1,

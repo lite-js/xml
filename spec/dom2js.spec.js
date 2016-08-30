@@ -29,7 +29,7 @@ describe('dom2js', () => {
     assert.deepEqual(
       elementObj.attributes,
       {
-        'class': 'test-div',
+        class: 'test-div',
         'data-hello': 'world',
       },
       'XMLLite.dom2js() not working: something wrong with the attributes.'
