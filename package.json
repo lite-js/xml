@@ -1,6 +1,6 @@
 {
   "name": "xml-lite",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "maintaining xml in pure javascript (IN BOTH NODE.JS & BROWSERS) ",
   "main": "lib/index.js",
   "scripts": {

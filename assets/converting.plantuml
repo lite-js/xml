@@ -1,0 +1,14 @@
+@startuml
+DOM -> jsObject: XMLLite.dom2js()
+DOM -> json: XMLLite.dom2json()
+DOM -> xml: XMLLite.serialize()
+jsObject -> DOM: XMLLite.js2dom()
+jsObject -> json: JSON.stringify()
+jsObject -> xml: XMLLite.js2xml()
+json -> DOM: XMLLite.json2dom()
+json -> jsObject: JSON.parse()
+json -> xml: XMLLite.json2xml()
+xml -> DOM: XMLLite.parse()
+xml -> jsObject: XMLLite.xml2js()
+xml -> json: XMLLite.xml2json()
+@enduml
