@@ -7,7 +7,7 @@ xml-lite
 
 ### converting
 
-![converting](./assets/converting.svg)
+![converting](./assets/converting.png)
 
 ### editing/traversing
 
