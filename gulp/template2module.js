@@ -10,8 +10,14 @@ const tpl2mod = require('template2module');
 const config = require('./config');
 
 const underscoreEngine = tpl2mod.engines.underscore;
-underscoreEngine.outerScopeVars.JSON = true;
-underscoreEngine.outerScopeVars.lang = true;
+underscoreEngine.outerScopeVars = {
+  JSON: true,
+  _: true,
+  __e: true,
+  __p: true,
+  __t: true,
+  lang: true,
+};
 
 const REGEXP = {
   importTag: /<import\s+src="\S*"><\/import>/g,
@@ -56,8 +62,13 @@ function renderTemplates() {
         .replace(REGEXP.spaces, '><'); // FIXME: if there are spaces between tags, it will not work in browser envs.
       const content = underscoreEngine.render(templateContent, file.path, 'commonjs')
         .replace(', helper', '')
-        .replace('helper = helper || {};', '');
-      file.contents = new Buffer(`const lang = require('zero-lang');\n${content}`);
+        .replace(/\s+helper =[^}]+};/, '')
+        .replace(/\s+var __j[^;]+;/, '')
+        .replace(/\s+var print[^{]+\{[^}]+};/, '')
+        .replace(/\s+return \{[^}]+}/, '')
+        .replace(/\s+return String[^{]+\{[^}]+}\);/, '')
+        .replace(/\s+var __e[^{]+\{[^}]+};/, '');
+      file.contents = new Buffer(`const lang = require('zero-lang');\nconst __e = require('./escape');\n${content}`);
     } catch (err) {
       this.emit('error', new gutil.PluginError('template2module', err.toString()));
     }

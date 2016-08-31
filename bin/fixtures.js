@@ -11,11 +11,8 @@ const path = require('path');
 const XMLLite = require('../lib/index');
 
 function fixingCloseTags(content) {
-  const test = content.replace(/<([^\s<>]+)([^>]*)\/>/g, (match, p1, p2) => {
-    // console.log(match, p1, p2);
-    return `<${p1}${p2}></${p1}>`;
-  });
-  return test;
+  // console.log(match, p1, p2);
+  return content.replace(/<([^\s<>]+)([^>]*)\/>/g, (match, p1, p2) => `<${p1}${p2}></${p1}>`);
 }
 
 const files = [];

@@ -14,10 +14,10 @@ const XMLLite = require('../lib/index');
 commander
   .command('xml2json [xml]')
   .description('converting xml to json')
-  .option('--replacer', 'replacer', null)
-  .option('--space', 'space', 2)
+  .option('--replacer [replacer]', 'replacer')
+  .option('--space [space]', 'space')
   .action((xml, options) => {
-    fs.readFile(path.resolve(process.cwd(), xml), (err, content) => {
+    fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
       if (err) throw err;
       console.log(XMLLite.xml2json(content, options.replacer, options.space));
     });
@@ -28,13 +28,38 @@ commander
   .command('json2xml [json]')
   .description('converting json to xml')
   .option('--beautify', 'beautify')
-  .option('--step', 'step', 2)
+  .option('--indent [indent]', 'indent', '  ')
   .option('--uglify', 'uglify')
   .option('--preserveComments', 'preserve comments')
   .action((json, options) => {
-    fs.readFile(path.resolve(process.cwd(), json), (err, content) => {
+    fs.readFile(path.resolve(process.cwd(), json), 'utf8', (err, content) => {
       if (err) throw err;
       console.log(XMLLite.json2xml(content, options));
+    });
+  });
+
+// beautify
+commander
+  .command('beautify [xml]')
+  .description('beautifying an xml file')
+  .option('--indent [indent]', 'indent', '  ')
+  .action((xml, options) => {
+    fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
+      if (err) throw err;
+      console.log(XMLLite.beautify(content, options.indent));
+      // XMLLite.beautify(content, options.indent);
+    });
+  });
+
+// uglify
+commander
+  .command('uglify [xml]')
+  .description('uglifying an xml file')
+  .option('--preserveComments', 'preserve comments')
+  .action((xml, options) => {
+    fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
+      if (err) throw err;
+      console.log(XMLLite.uglify(content, options.preserveComments));
     });
   });
 

@@ -4,11 +4,11 @@
  * @module index.demo
  * @see module:index
  */
-import './index.less';
 import $ from 'jquery';
 import CodeMirror from 'codemirror';
 import XMLLite from 'xml-lite';
 import lang from 'zero-lang';
+import './index.less';
 
 const $xml = $('#xml-textarea');
 const $json = $('#json-textarea');
@@ -36,6 +36,7 @@ function xml2json() {
     const json = XMLLite.xml2json(xmlContent, null, 2);
     jsonEditor.getDoc().setValue(json);
   } catch (e) {
+    console.log(e);
   }
 }
 function json2xml() {
@@ -46,6 +47,7 @@ function json2xml() {
     });
     xmlEditor.getDoc().setValue(xml);
   } catch (e) {
+    console.log(e);
   }
 }
 
