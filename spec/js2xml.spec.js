@@ -29,15 +29,12 @@ describe('js2xml', function description() {
                 leftPad(count, 4),
                 'font-weight: normal; color: black;'
               );
-              if (fixture === 'mmap-content') {
-                console.log(XMLLite.js2xml(jsonContent), XMLLite.uglify(xmlContent));
-              } else {
-                assert.equal(
-                  XMLLite.js2xml(jsonContent),
-                  XMLLite.uglify(xmlContent),
-                  `test case by fixture ${fixture} not passed`
-                );
-              }
+
+              assert.equal(
+                XMLLite.js2xml(jsonContent),
+                XMLLite.uglify(xmlContent),
+                `test case by fixture ${fixture} not passed`
+              );
               done();
             });
           },

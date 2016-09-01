@@ -891,7 +891,7 @@
                                   ],
                                   "attributes": {
                                     "Dirty": "0000000000000000",
-                                    "PlainText": "Group that \nneeds training",
+                                    "PlainText": "Group that needs training",
                                     "ReadOnly": "false"
                                   }
                                 }

@@ -10,9 +10,9 @@ const lang = require('zero-lang');
 const path = require('path');
 const XMLLite = require('../lib/index');
 
-function fixingCloseTags(content) {
+function fixingAndBeautifying(content) {
   // console.log(match, p1, p2);
-  return content.replace(/<([^\s<>]+)([^>]*)\/>/g, (match, p1, p2) => `<${p1}${p2}></${p1}>`);
+  return XMLLite.beautify(content.replace(/<([^\s<>]+)([^>]*)\/>/g, (match, p1, p2) => `<${p1}${p2}></${p1}>`));
 }
 
 const files = [];
@@ -24,7 +24,7 @@ fs.readdir(path.resolve(__dirname, '../spec/fixtures'), (err, filenames) => {
     const basename = filename.replace(/\.xml$/, '');
     files.push(basename);
     fs.readFile(path.resolve(__dirname, `../spec/fixtures/${filename}`), 'utf8', (e, content) => {
-      content = fixingCloseTags(content);
+      content = fixingAndBeautifying(content);
       fs.writeFile(
         path.resolve(__dirname, `../spec/fixtures/${basename}.xml`),
         content, (writeErr1) => {
