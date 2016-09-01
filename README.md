@@ -55,6 +55,12 @@ in browsers:
 <script src="$path/to/xml-lite/dist/xml-lite.js"> <!-- window.XMLLite is available -->
 ```
 
+in browsers with webpack:
+
+```javascript
+import XMLLite from 'xml-lite/lib/index-browser';
+```
+
 ## [API](./doc/api.md)
 
 ## [json spec](./doc/json-spec.md)
