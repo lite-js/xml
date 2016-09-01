@@ -47,7 +47,7 @@ commander
     fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
       if (err) throw err;
       console.log(XMLLite.beautify(content, options.indent));
-      //XMLLite.beautify(content, options.indent);
+      // XMLLite.beautify(content, options.indent);
     });
   });
 
