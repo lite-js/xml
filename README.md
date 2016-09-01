@@ -12,11 +12,20 @@ xml-lite
 ### editing/traversing
 
 ```javascript
-XMLLite.findChildNode();
-XMLLite.findChildNodes();
-XMLLite.findOrCreateChildNode();
-XMLLite.removeChildNode();
-XMLLite.eachChildNode();
+XMLLite.findChildNode(doc, tagName, attrs);
+XMLLite.findChildNodes(doc, tagName, attrs);
+XMLLite.findOrCreateChildNode(doc, tagName, attrs);
+XMLLite.removeChildNode(doc, tagName, attrs);
+XMLLite.eachChildNode(doc, tagName, attrs, callback);
+// ...
+```
+
+### formatting
+
+```javascript
+XMLLite.beautify(xml, indent);
+XMLLite.uglify(xml, preserveComments);
+XMLLite.sanitize(xml, reverse);
 // ...
 ```
 

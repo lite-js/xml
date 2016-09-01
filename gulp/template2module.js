@@ -68,7 +68,7 @@ function renderTemplates() {
         .replace(/\s+return \{[^}]+}/, '')
         .replace(/\s+return String[^{]+\{[^}]+}\);/, '')
         .replace(/\s+var __e[^{]+\{[^}]+};/, '');
-      file.contents = new Buffer(`const lang = require('zero-lang');\nconst __e = require('./escape');\n${content}`);
+      file.contents = new Buffer(`const lang = require('zero-lang');\nconst __e = require('../sanitize');\n${content}`);
     } catch (err) {
       this.emit('error', new gutil.PluginError('template2module', err.toString()));
     }
