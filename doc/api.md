@@ -1,16 +1,16 @@
 API
 ===
 
-## properties
+## Properties
 
 supported | name | description 
 ----------|-----|------------
 yes | domParser     | instance of DOMParser
 yes | xmlSerializer | instance of XMLSerializer
 
-## methods
+## Methods
 
-### parsing/serializing
+### Parsing/Serializing
 
 supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
@@ -27,7 +27,7 @@ yes | findOrCreateChildNode |  | Node doc, String tagName, Object attrs         
 yes | removeChildNode       |  | Node doc, String tagName, Object attrs                    | Node child  | remove one child node
 yes | eachChildNode         |  | Node doc, String tagName, Object attrs, Function callback | null        | execute callback using child node as parameter
 
-### formatting
+### Formatting
 
 supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
@@ -35,7 +35,7 @@ yes | beautify |  | String xml, (String or Number) step  | String str | beautify
 yes | uglify   |  | String xml, Boolean preserveComments | String str | uglify xml string
 yes | sanitize |  | String xml, Boolean reverse          | String str | escape or unescape "&", "<" and ">"
 
-### converting
+### Converting
 
 supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
@@ -46,3 +46,4 @@ yes | js2xml   |  | Object obj, Object options                | String xml   | c
 yes | json2xml |  | String json, Object options               | String xml   | converting a json string into xml string
 yes | js2dom   |  | Object obj                                | Node doc     | converting an object into a Node instance
 yes | json2dom |  | String json                               | Node doc     | converting a json string into a Node instance
+

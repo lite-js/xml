@@ -1,8 +1,11 @@
 {
   "name": "xml-lite",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "maintaining xml in pure javascript (IN BOTH NODE.JS & BROWSERS) ",
   "main": "lib/index.js",
+  "bin": {
+    "xml-lite": "./bin/xml-lite.js"
+  },
   "scripts": {
     "eslint": "gulp eslint"
   },
