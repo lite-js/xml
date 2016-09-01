@@ -376,7 +376,7 @@
                   <i>
                     Create Training Plan
                   </i>
-                  template contains the necessary components to create a detailed training plan, which you can then
+template contains the necessary components to create a detailed training plan, which you can then
                   implement and track.
                 </p>
                 <p>
@@ -699,7 +699,7 @@
     </ap:PreviewImageData>
     <ap:HyperlinkOptions Dirty="0000000000000001" BaseUrl="/Users/liangwensen/Desktop" DefaultToAbsolute="false">
     </ap:HyperlinkOptions>
-    <ap:PrintingOptions Dirty="0000000000000000" PageOrientation="urn:mindjet:Automatic" LeftMargin="5.000000" RightMargin="5.000000" TopMargin="5.000000" BottomMargin="5.000000" VerticalNumberOfPages="1" HorizontalNumberOfPages="1" FitToPage="true" PrintPageSeparators="false" PrintPageNumbers="false" PrintBackground="true" PrintBorder="true" PrintHeader="false" PrintFooter="true" BorderColor="ff000000" HeaderTextAlignment="urn:mindjet:Center" HeaderText="" FooterTextAlignment="urn:mindjet:Left" FooterText="&{MAP_NAME} - &{MODIFICATION_DATE} - &{AUTHOR_NAME}">
+    <ap:PrintingOptions Dirty="0000000000000000" PageOrientation="urn:mindjet:Automatic" LeftMargin="5.000000" RightMargin="5.000000" TopMargin="5.000000" BottomMargin="5.000000" VerticalNumberOfPages="1" HorizontalNumberOfPages="1" FitToPage="true" PrintPageSeparators="false" PrintPageNumbers="false" PrintBackground="true" PrintBorder="true" PrintHeader="false" PrintFooter="true" BorderColor="ff000000" HeaderTextAlignment="urn:mindjet:Center" HeaderText="" FooterTextAlignment="urn:mindjet:Left" FooterText="&amp;{MAP_NAME} - &amp;{MODIFICATION_DATE} - &amp;{AUTHOR_NAME}">
       <ap:HeaderFont Color="ff000000" Name="Arial" Size="8.000000" Bold="false" Italic="false" Underline="false" Strikethrough="false">
       </ap:HeaderFont>
       <ap:FooterFont Color="ff000000" Name="Arial" Size="8.000000" Bold="false" Italic="false" Underline="false" Strikethrough="false">
