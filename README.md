@@ -7,7 +7,7 @@ xml-lite
 
 ### Converting
 
-![converting](./doc/uml/converting.svg)
+![converting](./doc/uml/converting.png)
 
 ### Editing/Traversing
 
