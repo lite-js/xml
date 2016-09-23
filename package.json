@@ -25,6 +25,7 @@
   },
   "scripts": {
     "eslint": "gulp eslint",
+    "publish-all": "npm run push-all && npm publish && npm run sync-cnpm",
     "push-all": "npm run push-master && npm run push-tags && npm run push-gh-pages",
     "push-gh-pages": "git checkout gh-pages && git merge master && git push && git checkout master",
     "push-master": "git checkout master && git push",
