@@ -12,8 +12,7 @@ describe('js2xml', function description() {
     if (fixtues.length) {
       const fixture = fixtues.shift();
       it(`js2xml: spec/fixtures/${fixture}.xml`, (done) => {
-        $.get(`./fixtures/${fixture}.xml`,
-          (xmlContent) => {
+        $.get(`./fixtures/${fixture}.xml`, (xmlContent) => {
             $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
               const t1 = Date.now();
               XMLLite.js2xml(jsonContent);

@@ -21,11 +21,23 @@ yes | serialize | serializeToString | Document doc | String str   | Document to 
 
 supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
-yes | findChildNode         |  | Node doc, String tagName, Object attrs                    | Node child  | find one child node
-yes | findChildNodes        |  | Node doc, String tagName, Object attrs                    | Array(Node) | find child nodes
-yes | findOrCreateChildNode |  | Node doc, String tagName, Object attrs                    | Node child  | find or create one child node
-yes | removeChildNode       |  | Node doc, String tagName, Object attrs                    | Node child  | remove one child node
-yes | eachChildNode         |  | Node doc, String tagName, Object attrs, Function callback | null        | execute callback using child node as parameter
+yes | findChildNode         |  | Node doc, Object query                    | Node child  | find one child node
+yes | findChildNodes        |  | Node doc, Object query                    | Array(Node) | find child nodes
+yes | findOrCreateChildNode |  | Node doc, Object query                    | Node child  | find or create one child node
+yes | removeChildNode       |  | Node doc, Object query                    | Node child  | remove one child node
+yes | eachChildNode         |  | Node doc, Object query, Function callback | null        | execute callback using child node as parameter
+
+#### Sample for `Object query` 
+
+```javascript
+// query for <some-tag key="value"/>
+{
+  tag: 'some-tag', // Node.tagName === 'some-tag'
+  attrs: {         // Node.getAttribute('key') === 'value'
+    key: 'value'
+  }
+}
+```
 
 ### Formatting
 

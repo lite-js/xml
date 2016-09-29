@@ -12,11 +12,11 @@ xml-lite
 ### Editing/Traversing
 
 ```javascript
-XMLLite.findChildNode(doc, tagName, attrs);
-XMLLite.findChildNodes(doc, tagName, attrs);
-XMLLite.findOrCreateChildNode(doc, tagName, attrs);
-XMLLite.removeChildNode(doc, tagName, attrs);
-XMLLite.eachChildNode(doc, tagName, attrs, callback);
+XMLLite.findChildNode(doc, query);
+XMLLite.findChildNodes(doc, query);
+XMLLite.findOrCreateChildNode(doc, query);
+XMLLite.removeChildNode(doc, query);
+XMLLite.eachChildNode(doc, query, callback);
 // ...
 ```
 
