@@ -32,8 +32,9 @@ yes | eachChildNode         |  | Node doc, Object query, Function callback | nul
 ```javascript
 // query for <some-tag key="value"/>
 {
-  tag: 'some-tag', // Node.tagName === 'some-tag'
-  attrs: {         // Node.getAttribute('key') === 'value'
+  tagName: 'some-tag', // Node.tagName === 'some-tag'
+  nodeName: 'some-tag', // Node.nodeName === 'some-tag'
+  attributes: {         // Node.getAttribute('key') === 'value'
     key: 'value'
   }
 }
@@ -58,4 +59,3 @@ yes | js2xml   |  | Object obj, Object options                | String xml   | c
 yes | json2xml |  | String json, Object options               | String xml   | converting a json string into xml string
 yes | js2dom   |  | Object obj                                | Node doc     | converting an object into a Node instance
 yes | json2dom |  | String json                               | Node doc     | converting a json string into a Node instance
-
