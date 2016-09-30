@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1"/>
+<title>How to contribute</title>
+<link rel="stylesheet" href="http://leungwensen.github.io/zfinder/dist/lib/normalize-4.2.0.min.css">
+
+  <link rel="stylesheet" href="http://leungwensen.github.io/zfinder/dist/lib/github-markdown-2.3.0.min.css">
+  <link rel="stylesheet" href="http://leungwensen.github.io/zfinder/dist/zfinder/markdown-previewer.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+     style="width:0;height:0;position:absolute;overflow:hidden;">
+  <defs>
+    <symbol id="si-zfinder-collapse-left" viewBox="0 0 38 38">
+      <path d="M38 0H0v38h38V0zM3 35V3h32v32H3zM5 5v28h17V21h-9.667L16 26h-4l-5-7 5-7h4l-3.667 5H22V5H5z"/>
+    </symbol>
+    <symbol id="si-zfinder-expand-right" viewBox="0 0 38 38">
+      <path d="M0 0h38v38H0V0zm35 35V3H3v32h32zM22 5v28H5V21h9.667L11 26h4l5-7-5-7h-4l3.667 5H5V5h17z"/>
+    </symbol>
+    <symbol id="si-zfinder-fullscreen" viewBox="0 0 28 28">
+      <path d="M4 18H0v10h10v-4H4v-6zm-4-8h4V4h6V0H0v10zm24 14h-6v4h10V18h-4v6zM18 0v4h6v6h4V0H18z"/>
+    </symbol>
+    <symbol id="si-zfinder-fullscreen-exit" viewBox="0 0 28 28">
+      <path d="M0 22h6v6h4V18H0v4zM6 6H0v4h10V0H6v6zm12 22h4v-6h6v-4H18v10zm4-22V0h-4v10h10V6h-6z"/>
+    </symbol>
+  </defs>
+</svg>
+<nav id="toc">
+  <div id="toc-body" class="toc-body"></div>
+</nav>
+<article id="markdown">
+  <nav id="markdown-header" class="markdown-header">
+    <svg class="si" id="toggle-toc" width="24" height="24">
+      <use xlink:href="#si-zfinder-collapse-left"></use>
+    </svg>
+    <svg class="si float-right" id="toggle-fullscreen-article" width="24" height="24">
+      <use xlink:href="#si-zfinder-fullscreen"></use>
+    </svg>
+  </nav>
+  <div id="markdown-body" class="markdown-body"><h1>How to contribute</h1>
+<ul>
+<li><a href="#getting-help">Getting help</a></li>
+<li><a href="#submitting-bug-reports">Submitting bug reports</a></li>
+<li><a href="#contributing-code">Contributing code</a></li>
+</ul>
+<h2>Getting help</h2>
+<p>Community discussion, questions, and informal bug reporting is done on the
+<a href="http://discuss.codemirror.net">discuss.CodeMirror forum</a>.</p>
+<h2>Submitting bug reports</h2>
+<p>The preferred way to report bugs is to use the
+<a href="http://github.com/codemirror/CodeMirror/issues">GitHub issue tracker</a>. Before
+reporting a bug, read these pointers.</p>
+<p><strong>Note:</strong> The issue tracker is for <em>bugs</em>, not requests for help. Questions
+should be asked on the
+<a href="http://discuss.codemirror.net">discuss.CodeMirror forum</a> instead.</p>
+<h3>Reporting bugs effectively</h3>
+<ul>
+<li>
+<p>CodeMirror is maintained by volunteers. They don’t owe you anything, so be
+polite. Reports with an indignant or belligerent tone tend to be moved to the
+bottom of the pile.</p>
+</li>
+<li>
+<p>Include information about <strong>the browser in which the problem occurred</strong>. Even
+if you tested several browsers, and the problem occurred in all of them,
+mention this fact in the bug report. Also include browser version numbers and
+the operating system that you’re on.</p>
+</li>
+<li>
+<p>Mention which release of CodeMirror you’re using. Preferably, try also with
+the current development snapshot, to ensure the problem has not already been
+fixed.</p>
+</li>
+<li>
+<p>Mention very precisely what went wrong. “X is broken” is not a good bug
+report. What did you expect to happen? What happened instead? Describe the
+exact steps a maintainer has to take to make the problem occur. We can not
+fix something that we can not observe.</p>
+</li>
+<li>
+<p>If the problem can not be reproduced in any of the demos included in the
+CodeMirror distribution, please provide an HTML document that demonstrates
+the problem. The best way to do this is to go to
+<a href="http://jsbin.com/ihunin/edit">jsbin.com</a>, enter it there, press save, and
+include the resulting link in your bug report.</p>
+</li>
+</ul>
+<h2>Contributing code</h2>
+<ul>
+<li>Make sure you have a <a href="https://github.com/signup/free">GitHub Account</a></li>
+<li>Fork <a href="https://github.com/codemirror/CodeMirror/">CodeMirror</a>
+(<a href="https://help.github.com/articles/fork-a-repo">how to fork a repo</a>)</li>
+<li>Make your changes</li>
+<li>If your changes are easy to test or likely to regress, add tests.
+Tests for the core go into <code>test/test.js</code>, some modes have their own
+test suite under <code>mode/XXX/test.js</code>. Feel free to add new test
+suites to modes that don’t have one yet (be sure to link the new
+tests into <code>test/index.html</code>).</li>
+<li>Follow the general code style of the rest of the project (see
+below). Run <code>bin/lint</code> to verify that the linter is happy.</li>
+<li>Make sure all tests pass. Visit <code>test/index.html</code> in your browser to
+run them.</li>
+<li>Submit a pull request
+(<a href="https://help.github.com/articles/fork-a-repo">how to create a pull request</a>).
+Don’t put more than one feature/fix in a single pull request.</li>
+</ul>
+<p>By contributing code to CodeMirror you</p>
+<ul>
+<li>
+<p>agree to license the contributed code under CodeMirror’s <a href="http://codemirror.net/LICENSE">MIT
+license</a>.</p>
+</li>
+<li>
+<p>confirm that you have the right to contribute and license the code
+in question. (Either you hold all rights on the code, or the rights
+holder has explicitly granted the right to use it like this,
+through a compatible open source license or through a direct
+agreement with you.)</p>
+</li>
+</ul>
+<h3>Coding standards</h3>
+<ul>
+<li>
+<p>2 spaces per indentation level, no tabs.</p>
+</li>
+<li>
+<p>Note that the linter (<code>bin/lint</code>) which is run after each commit
+complains about unused variables and functions. Prefix their names
+with an underscore to muffle it.</p>
+</li>
+<li>
+<p>CodeMirror does <em>not</em> follow JSHint or JSLint prescribed style.
+Patches that try to ‘fix’ code to pass one of these linters will be
+unceremoniously discarded.</p>
+</li>
+</ul>
+</div>
+</article>
+<div id="loading">
+  <div class="sk-double-bounce">
+    <div class="sk-child sk-double-bounce1"></div>
+    <div class="sk-child sk-double-bounce2"></div>
+  </div>
+</div>
+
+<script src="http://leungwensen.github.io/zfinder/dist/lib/jquery-3.1.0.min.js"></script>
+<script src="http://leungwensen.github.io/zfinder/dist/lib/screenfull-3.0.0.min.js"></script>
+<script src="http://leungwensen.github.io/zfinder/dist/zfinder/markdown-previewer.js"></script>
+</body>
+</html>

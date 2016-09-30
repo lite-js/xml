@@ -24,12 +24,14 @@
     "xml-lite": "./bin/xml-lite.js"
   },
   "scripts": {
+    "build-doc": "zfinder build",
     "eslint": "gulp eslint",
     "publish-all": "npm run push-all && npm publish && npm run sync-cnpm",
     "push-all": "npm run push-master && npm run push-tags && npm run push-gh-pages",
     "push-gh-pages": "git checkout gh-pages && git merge master && git push && git checkout master",
     "push-master": "git checkout master && git push",
     "push-tags": "git push --tag",
+    "start": "zfinder serve",
     "sync-cnpm": "cnpm sync xml-lite"
   },
   "dependencies": {
@@ -79,7 +81,8 @@
     "through2": "^2.0.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.0"
+    "webpack-dev-server": "^1.15.0",
+    "zfinder": "^0.2.9"
   },
   "precommit": {
     "run": [

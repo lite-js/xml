@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1"/>
+<title>xml-lite</title>
+<link rel="stylesheet" href="http://leungwensen.github.io/zfinder/dist/lib/normalize-4.2.0.min.css">
+
+  <link rel="stylesheet" href="http://leungwensen.github.io/zfinder/dist/lib/github-markdown-2.3.0.min.css">
+  <link rel="stylesheet" href="http://leungwensen.github.io/zfinder/dist/zfinder/markdown-previewer.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+     style="width:0;height:0;position:absolute;overflow:hidden;">
+  <defs>
+    <symbol id="si-zfinder-collapse-left" viewBox="0 0 38 38">
+      <path d="M38 0H0v38h38V0zM3 35V3h32v32H3zM5 5v28h17V21h-9.667L16 26h-4l-5-7 5-7h4l-3.667 5H22V5H5z"/>
+    </symbol>
+    <symbol id="si-zfinder-expand-right" viewBox="0 0 38 38">
+      <path d="M0 0h38v38H0V0zm35 35V3H3v32h32zM22 5v28H5V21h9.667L11 26h4l5-7-5-7h-4l3.667 5H5V5h17z"/>
+    </symbol>
+    <symbol id="si-zfinder-fullscreen" viewBox="0 0 28 28">
+      <path d="M4 18H0v10h10v-4H4v-6zm-4-8h4V4h6V0H0v10zm24 14h-6v4h10V18h-4v6zM18 0v4h6v6h4V0H18z"/>
+    </symbol>
+    <symbol id="si-zfinder-fullscreen-exit" viewBox="0 0 28 28">
+      <path d="M0 22h6v6h4V18H0v4zM6 6H0v4h10V0H6v6zm12 22h4v-6h6v-4H18v10zm4-22V0h-4v10h10V6h-6z"/>
+    </symbol>
+  </defs>
+</svg>
+<nav id="toc">
+  <div id="toc-body" class="toc-body"></div>
+</nav>
+<article id="markdown">
+  <nav id="markdown-header" class="markdown-header">
+    <svg class="si" id="toggle-toc" width="24" height="24">
+      <use xlink:href="#si-zfinder-collapse-left"></use>
+    </svg>
+    <svg class="si float-right" id="toggle-fullscreen-article" width="24" height="24">
+      <use xlink:href="#si-zfinder-fullscreen"></use>
+    </svg>
+  </nav>
+  <div id="markdown-body" class="markdown-body"><h1>xml-lite</h1>
+<p><strong>Maintaining XML</strong> in pure javascript (IN BOTH NODE.JS &amp; BROWSERS) <a href="https://leungwensen.github.io/xml-lite/">Homepage</a></p>
+<h2>Maintaining?</h2>
+<h3>Converting</h3>
+<figure><img src="./doc/uml/converting.png" alt="converting"></figure>
+<h3>Editing/Traversing</h3>
+<pre><code class="language-javascript">XMLLite.findChildNode(doc, query);
+XMLLite.findChildNodes(doc, query);
+XMLLite.findOrCreateChildNode(doc, query);
+XMLLite.removeChildNode(doc, query);
+XMLLite.eachChildNode(doc, query, callback);
+<span class="hljs-comment">// ...</span>
+</code></pre>
+<h3>Formatting</h3>
+<pre><code class="language-javascript">XMLLite.beautify(xml, indent);
+XMLLite.uglify(xml, preserveComments);
+XMLLite.sanitize(xml, reverse);
+<span class="hljs-comment">// ...</span>
+</code></pre>
+<p>Actually, you can get the js object from <code>XMLLite.xml2js(xml)</code>, do whatever you want, and convert it back to xml again with <code>XMLLite.js2xml(obj)</code>.</p>
+<h2>Why?</h2>
+<ol>
+<li>A reasonable need for usage in both Node.js and Browsers</li>
+<li>A more reasonable need to use native APIs(DOMParser/XMLSerializer) to speed up the maintaining process and keep the library thin</li>
+</ol>
+<h2>Why <code>xml-lite</code>?</h2>
+<ol>
+<li>It <strong>works exactly the same in both Node.js and Browsers</strong></li>
+<li>The browser version is supper <strong>light-weight</strong>(<a href="./dist/xml-lite.js">dist/xml-lite.js</a>)</li>
+<li><strong>Convenient</strong> APIs for converting between xml/js/json/DOM, and lots of helpers to maintain the data structures</li>
+<li>Super <strong>fast</strong>. it takes less than 30ms to convert an xml document with over 1,000 nodes into a js object</li>
+</ol>
+<h2>Install</h2>
+<pre><code class="language-shell">$ npm install xml-lite --save
+$ npm install xml-lite -g
+</code></pre>
+<h2>Usage</h2>
+<p>In Node.js</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">const</span> XMLLite = <span class="hljs-built_in">require</span>(<span class="hljs-string">'xml-lite'</span>);
+</code></pre>
+<p>Command line client</p>
+<pre><code class="language-shell">$ xml-lite --help
+</code></pre>
+<p>In browsers</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"$path/to/xml-lite/dist/xml-lite.js"</span>&gt;</span><span class="handlebars"><span class="xml"> <span class="hljs-comment">&lt;!-- window.XMLLite is available --&gt;</span>
+</span></span></code></pre>
+<p>In browsers with webpack</p>
+<pre><code class="language-javascript"><span class="hljs-keyword">import</span> XMLLite <span class="hljs-keyword">from</span> <span class="hljs-string">'xml-lite/lib/index-browser'</span>;
+</code></pre>
+<h2><a href="https://leungwensen.github.io/xml-lite/">Demo</a></h2>
+<h2><a href="./doc/api.html">API</a></h2>
+<h2><a href="./doc/json-spec.html">JSON spec</a></h2>
+<h2><a href="./doc/roadmap.html">Roadmap</a></h2>
+<h2><a href="./doc/projects-using-xml-lite.html">Projects using xml-lite</a></h2>
+<h2><a href="./doc/contributing.html">Contributing</a></h2>
+</div>
+</article>
+<div id="loading">
+  <div class="sk-double-bounce">
+    <div class="sk-child sk-double-bounce1"></div>
+    <div class="sk-child sk-double-bounce2"></div>
+  </div>
+</div>
+
+<script src="http://leungwensen.github.io/zfinder/dist/lib/jquery-3.1.0.min.js"></script>
+<script src="http://leungwensen.github.io/zfinder/dist/lib/screenfull-3.0.0.min.js"></script>
+<script src="http://leungwensen.github.io/zfinder/dist/zfinder/markdown-previewer.js"></script>
+</body>
+</html>

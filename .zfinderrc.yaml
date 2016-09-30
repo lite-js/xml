@@ -1,0 +1,5 @@
+openOnStart: true
+port: 2016
+build:
+  basenameMap:
+    README.md: doc.html
