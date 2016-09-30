@@ -2,34 +2,87 @@ import XMLLite from 'xml-lite';
 
 const assert = chai.assert;
 
-describe('dom2js', () => {
-  $.get(`./fixtures/bookstore.xml`, (xmlContent) => {
+describe('dom-utils', () => {
+  $.get('./fixtures/bookstore.xml', (xmlContent) => {
     const doc = XMLLite.parse(xmlContent);
-    console.log(xmlContent, doc.childNodes);
-    /*
-    it('Element: type and tag', () => {
+
+    it('dom-utils: findChildNode(doc, query)', () => {
       assert.equal(
-        elementObj.type,
-        'Element',
-        'XMLLite.dom2js() not working: type is not right.'
-      );
-      assert.equal(
-        elementObj.tag,
-        'DIV',
-        'XMLLite.dom2js() not working: tag is not right.'
+        XMLLite.findChildNode(doc, {
+          nodeName: 'PITarget'
+        }).nodeName,
+        'PITarget',
+        'XMLLite.findChildNode(doc, query) not working: not exists.'
       );
     });
 
-    it('Element: attributes', () => {
-      assert.deepEqual(
-        elementObj.attributes,
-        {
-          class: 'test-div',
-          'data-hello': 'world',
-        },
-        'XMLLite.dom2js() not working: something wrong with the attributes.'
+    it('dom-utils: findChildNodes(doc, query)', () => {
+      assert.equal(
+        XMLLite.findChildNodes(XMLLite.findChildNode(doc, {
+          tagName: 'bookstore'
+        }), {
+          tagName: 'book'
+        }).length,
+        3,
+        'XMLLite.findChildNodes(doc, query) not working: result nodes count not matching.'
       );
     });
-    */
+
+    it('dom-utils: createChildNode(doc, query)', () => {
+      assert.equal(
+        // cannot call this on #document, because Only one element on document allowed.
+        XMLLite.createChildNode(doc.documentElement, {
+          tagName: 'test'
+        }).tagName,
+        'test',
+        'XMLLite.createChildNode(doc, query) not working: failed.'
+      );
+    });
+
+    it('dom-utils: findOrCreateChildNode(doc, query)', () => {
+      assert.equal(
+        // cannot call this on #document, because Only one element on document allowed.
+        XMLLite.findOrCreateChildNode(doc.documentElement, {
+          tagName: 'test'
+        }).tagName,
+        'test',
+        'XMLLite.findOrCreateChildNode(doc, query) not working: failed.'
+      );
+    });
+
+    it('dom-utils: eachChildNode(doc, query, callback)', () => {
+      assert.doesNotThrow(
+        () => {
+          XMLLite.eachChildNode(doc, {}, (node) => {
+            console.log(node.nodeName);
+          });
+        },
+        Error,
+        'XMLLite.eachChildNode(doc, query, callback) not working: failed.'
+      );
+    });
+
+    it('dom-utils: removeChildNode(doc, query)', () => {
+      const length = doc.childNodes.length;
+      console.log(doc.childNodes);
+
+      assert.doesNotThrow(
+        () => {
+          XMLLite.removeChildNode(doc, {
+            nodeName: 'PITarget'
+          });
+        },
+        Error,
+        'XMLLite.eachChildNode(doc, query, callback) not working: failed.'
+      );
+
+      assert.equal(
+        doc.childNodes.length,
+        length - 1,
+        'XMLLite.removeChildNode(doc, query) not working: failed.'
+      );
+
+      console.log(doc.childNodes);
+    });
   }, 'text');
 });
