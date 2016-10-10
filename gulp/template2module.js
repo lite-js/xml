@@ -23,7 +23,7 @@ const REGEXP = {
   importTag: /<import\s+src="\S*"><\/import>/g,
   svgSpriteTag: /<svg-sprite\/>/,
   srcPath: /src="(\S*)"/,
-  spaces: />[\s|\r|\n]*</g,
+  spacesBetweenTags: />[\s|\r|\n]*</g,
 };
 
 const svgSprite = ''; // fs.readFileSync(path.resolve(__dirname, '../dist/zfinder/svg-symbols.svg'), 'utf8');
@@ -59,7 +59,7 @@ function renderTemplates() {
       gutil.log(file.path);
       // @TODO add svg sprite file as needed, instead of putting the whole evil-icons svg file
       const templateContent = parsingSvgSprite(importing(file.contents.toString('utf8'), file.path))
-        .replace(REGEXP.spaces, '><'); // FIXME: if there are spaces between tags, it will not work in browser envs.
+        .replace(REGEXP.spacesBetweenTags, '><'); // FIXME: if there are spaces between tags, it will not work in browser envs.
       const content = underscoreEngine.render(templateContent, file.path, 'commonjs')
         .replace(', helper', '')
         .replace(/\s+helper =[^}]+};/, '')
@@ -68,7 +68,7 @@ function renderTemplates() {
         .replace(/\s+return \{[^}]+}/, '')
         .replace(/\s+return String[^{]+\{[^}]+}\);/, '')
         .replace(/\s+var __e[^{]+\{[^}]+};/, '');
-      file.contents = new Buffer(`const lang = require('zero-lang');\nconst __e = require('../sanitize');\n${content}`);
+      file.contents = new Buffer(`const lang = require('zero-lang');\nconst __e = require('../escape');\n${content}`);
     } catch (err) {
       this.emit('error', new gutil.PluginError('template2module', err.toString()));
     }
