@@ -23,9 +23,11 @@ supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
 yes | findChildNode         |  | Node doc, Object query                    | Node child  | find one child node
 yes | findChildNodes        |  | Node doc, Object query                    | Array(Node) | find child nodes
+yes | findNodes             |  | Node doc, Object query                    | Array(Node) | find nodes
 yes | findOrCreateChildNode |  | Node doc, Object query                    | Node child  | find or create one child node
 yes | removeChildNode       |  | Node doc, Object query                    | Node child  | remove one child node
 yes | eachChildNode         |  | Node doc, Object query, Function callback | null        | execute callback using child node as parameter
+yes | eachNode              |  | Node doc, Object query, Function callback | null        | execute callback using node as parameter
 
 #### Sample for `Object query` 
 
