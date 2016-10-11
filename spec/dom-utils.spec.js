@@ -28,6 +28,18 @@ describe('dom-utils', () => {
       );
     });
 
+    it('dom-utils: findAllNodes(doc, query)', () => {
+      assert.equal(
+        XMLLite.findAllNodes(XMLLite.findChildNode(doc, {
+          tagName: 'bookstore'
+        }), {
+          tagName: 'price'
+        }).length,
+        3,
+        'XMLLite.findAllNodes(doc, query) not working: result nodes count not matching.'
+      );
+    });
+
     it('dom-utils: createChildNode(doc, query)', () => {
       assert.equal(
         // cannot call this on #document, because Only one element on document allowed.
@@ -54,6 +66,18 @@ describe('dom-utils', () => {
       assert.doesNotThrow(
         () => {
           XMLLite.eachChildNode(doc, {}, (node) => {
+            console.log(node.nodeName);
+          });
+        },
+        Error,
+        'XMLLite.eachChildNode(doc, query, callback) not working: failed.'
+      );
+    });
+
+    it('dom-utils: eachNode(doc, query, callback)', () => {
+      assert.doesNotThrow(
+        () => {
+          XMLLite.eachNode(doc, {}, (node) => {
             console.log(node.nodeName);
           });
         },
