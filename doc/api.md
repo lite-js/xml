@@ -21,6 +21,7 @@ yes | serialize | serializeToString | Document doc | String str   | Document to 
 
 supported | name | alias | parameters | return value | description
 ----------|------|-------|------------|--------------|------------
+yes | attributesAsObject    |  | Node doc                                  | Node child  | attributes to key-value pairs
 yes | findChildNode         |  | Node doc, Object query                    | Node child  | find one child node
 yes | findChildNodes        |  | Node doc, Object query                    | Array(Node) | find child nodes
 yes | findNodes             |  | Node doc, Object query                    | Array(Node) | find nodes

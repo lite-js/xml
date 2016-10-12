@@ -6,6 +6,21 @@ describe('dom-utils', () => {
   $.get('./fixtures/bookstore.xml', (xmlContent) => {
     const doc = XMLLite.parse(xmlContent);
 
+    it('dom-utils: attributesAsObject(doc)', () => {
+      assert.deepEqual(
+        XMLLite.attributesAsObject(XMLLite.findNodes(doc, {
+          tagName: 'book',
+          attributes: {
+            category: 'COOKING',
+          },
+        })[0]),
+        {
+          category: 'COOKING',
+        },
+        'XMLLite.attributesAsObject(doc) not working: something wrong.'
+      );
+    });
+
     it('dom-utils: findChildNode(doc, query)', () => {
       assert.equal(
         XMLLite.findChildNode(doc, {
