@@ -1,34 +1,34 @@
 {
-  "type": "Document",
+  "type": 9,
   "children": [
     {
-      "type": "ProcessingInstruction",
+      "type": 7,
       "tag": "PITarget",
       "data": "PIContent"
     },
     {
-      "type": "ProcessingInstruction",
+      "type": 7,
       "tag": "xml-stylesheet",
       "data": "type=\"text/css\" href=\"./bootstore.css\""
     },
     {
-      "type": "Comment",
+      "type": 8,
       "data": " some comments "
     },
     {
-      "type": "Element",
+      "type": 1,
       "tag": "bookstore",
       "children": [
         {
-          "type": "Element",
+          "type": 1,
           "tag": "book",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "title",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Everyday Italian"
                 }
               ],
@@ -37,33 +37,33 @@
               }
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "author",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Giada De Laurentiis"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "year",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "2005"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "30.00"
                 }
               ],
@@ -75,15 +75,15 @@
           }
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "book",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "title",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Harry Potter"
                 }
               ],
@@ -92,33 +92,33 @@
               }
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "author",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "J K. Rowling"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "year",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "2005"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "29.99"
                 }
               ],
@@ -130,15 +130,15 @@
           }
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "book",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "title",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Learning XML"
                 }
               ],
@@ -147,33 +147,33 @@
               }
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "author",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Erik T. Ray"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "year",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "2003"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "39.95"
                 }
               ],

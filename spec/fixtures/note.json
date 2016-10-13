@@ -1,49 +1,49 @@
 {
-  "type": "Document",
+  "type": 9,
   "children": [
     {
-      "type": "Element",
+      "type": 1,
       "tag": "note",
       "children": [
         {
-          "type": "Element",
+          "type": 1,
           "tag": "to",
           "children": [
             {
-              "type": "TextNode",
+              "type": 3,
               "text": "George"
             }
           ],
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "from",
           "children": [
             {
-              "type": "TextNode",
+              "type": 3,
               "text": "John"
             }
           ],
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "heading",
           "children": [
             {
-              "type": "TextNode",
+              "type": 3,
               "text": "Reminder"
             }
           ],
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "body",
           "children": [
             {
-              "type": "TextNode",
+              "type": 3,
               "text": "Don't forget the meeting!"
             }
           ],

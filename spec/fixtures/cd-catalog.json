@@ -1,84 +1,84 @@
 {
-  "type": "Document",
+  "type": 9,
   "children": [
     {
-      "type": "ProcessingInstruction",
+      "type": 7,
       "tag": "xml-stylesheet",
       "data": "type=\"text/css\" href=\"./cd-catalog.css\""
     },
     {
-      "type": "Comment",
+      "type": 8,
       "data": " some comments "
     },
     {
-      "type": "Element",
+      "type": 1,
       "tag": "CATALOG",
       "children": [
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Empire Burlesque"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Bob Dylan"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Columbia"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "10.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1985"
                 }
               ],
@@ -88,70 +88,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Hide your heart"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Bonnie Tyler"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "CBS Records"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "9.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1988"
                 }
               ],
@@ -161,70 +161,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Greatest Hits"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Dolly Parton"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "RCA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "9.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1982"
                 }
               ],
@@ -234,70 +234,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Still got the blues"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Gary Moore"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Virgin records"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "10.20"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1990"
                 }
               ],
@@ -307,70 +307,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Eros"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Eros Ramazzotti"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "EU"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "BMG"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "9.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1997"
                 }
               ],
@@ -380,70 +380,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "One night only"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Bee Gees"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Polydor"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "10.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1998"
                 }
               ],
@@ -453,70 +453,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Sylvias Mother"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Dr.Hook"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "CBS"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.10"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1973"
                 }
               ],
@@ -526,70 +526,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Maggie May"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Rod Stewart"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Pickwick"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.50"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1990"
                 }
               ],
@@ -599,70 +599,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Romanza"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Andrea Bocelli"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "EU"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Polydor"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "10.80"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1996"
                 }
               ],
@@ -672,70 +672,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "When a man loves a woman"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Percy Sledge"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Atlantic"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.70"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1987"
                 }
               ],
@@ -745,70 +745,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Black angel"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Savage Rose"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "EU"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Mega"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "10.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1995"
                 }
               ],
@@ -818,70 +818,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1999 Grammy Nominees"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Many"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Grammy"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "10.20"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1999"
                 }
               ],
@@ -891,70 +891,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "For the good times"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Kenny Rogers"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Mucik Master"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.70"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1995"
                 }
               ],
@@ -964,70 +964,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Big Willie style"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Will Smith"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Columbia"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "9.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1997"
                 }
               ],
@@ -1037,70 +1037,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Tupelo Honey"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Van Morrison"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Polydor"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.20"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1971"
                 }
               ],
@@ -1110,70 +1110,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "The very best of"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Cat Stevens"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Island"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1990"
                 }
               ],
@@ -1183,70 +1183,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Stop"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Sam Brown"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "A and M"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1988"
                 }
               ],
@@ -1256,70 +1256,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Bridge of Spies"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "T`Pau"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Siren"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "7.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1987"
                 }
               ],
@@ -1329,70 +1329,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Private Dancer"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Tina Turner"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Capitol"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1983"
                 }
               ],
@@ -1402,70 +1402,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Midt om natten"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Kim Larsen"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "EU"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Medley"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "7.80"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1983"
                 }
               ],
@@ -1475,70 +1475,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Pavarotti Gala Concert"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Luciano Pavarotti"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "DECCA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "9.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1991"
                 }
               ],
@@ -1548,70 +1548,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "The dock of the bay"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Otis Redding"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Atlantic"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "7.90"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1987"
                 }
               ],
@@ -1621,70 +1621,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Picture book"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Simply Red"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "EU"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Elektra"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "7.20"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1985"
                 }
               ],
@@ -1694,70 +1694,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Red"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "The Communards"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "UK"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "London"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "7.80"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1987"
                 }
               ],
@@ -1767,70 +1767,70 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "CD",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "TITLE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Unchain my heart"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "ARTIST",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Joe Cocker"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COUNTRY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "USA"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "COMPANY",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "EMI"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "PRICE",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "8.20"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "YEAR",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "1987"
                 }
               ],

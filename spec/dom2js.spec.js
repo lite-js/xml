@@ -15,7 +15,7 @@ describe('dom2js', () => {
   it('Element: type and tag', () => {
     assert.equal(
       elementObj.type,
-      'Element',
+      testDiv.ELEMENT_NODE,
       'XMLLite.dom2js() not working: type is not right.'
     );
     assert.equal(

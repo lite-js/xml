@@ -1,57 +1,57 @@
 {
-  "type": "Document",
+  "type": 9,
   "children": [
     {
-      "type": "Comment",
+      "type": 8,
       "data": " a simple breakfast menu "
     },
     {
-      "type": "Element",
+      "type": 1,
       "tag": "breakfast_menu",
       "children": [
         {
-          "type": "Element",
+          "type": 1,
           "tag": "food",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "name",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Belgian Waffles"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "$5.95"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "description",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "two of our famous Belgian Waffles with plenty of real maple syrup"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "calories",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "650"
                 }
               ],
@@ -61,48 +61,48 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "food",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "name",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Strawberry Belgian Waffles"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "$7.95"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "description",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "light Belgian waffles covered with strawberries and whipped cream"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "calories",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "900"
                 }
               ],
@@ -112,48 +112,48 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "food",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "name",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Berry-Berry Belgian Waffles"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "$8.95"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "description",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "light Belgian waffles covered with an assortment of fresh berries and whipped cream"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "calories",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "900"
                 }
               ],
@@ -163,48 +163,48 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "food",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "name",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "French Toast"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "$4.50"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "description",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "thick slices made from our homemade sourdough bread"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "calories",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "600"
                 }
               ],
@@ -214,48 +214,48 @@
           "attributes": {}
         },
         {
-          "type": "Element",
+          "type": 1,
           "tag": "food",
           "children": [
             {
-              "type": "Element",
+              "type": 1,
               "tag": "name",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "Homestyle Breakfast"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "price",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "$6.95"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "description",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "two eggs, bacon or sausage, toast, and our ever-popular hash browns"
                 }
               ],
               "attributes": {}
             },
             {
-              "type": "Element",
+              "type": 1,
               "tag": "calories",
               "children": [
                 {
-                  "type": "TextNode",
+                  "type": 3,
                   "text": "950"
                 }
               ],
