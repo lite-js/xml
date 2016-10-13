@@ -59,7 +59,8 @@ function renderTemplates() {
       gutil.log(file.path);
       // @TODO add svg sprite file as needed, instead of putting the whole evil-icons svg file
       const templateContent = parsingSvgSprite(importing(file.contents.toString('utf8'), file.path))
-        .replace(REGEXP.spacesBetweenTags, '><'); // FIXME: if there are spaces between tags, it will not work in browser envs.
+        .replace(REGEXP.spacesBetweenTags, '><');
+      // FIXME: if there are spaces between tags, it will not work in browser envs.
       const content = underscoreEngine.render(templateContent, file.path, 'commonjs')
         .replace(', helper', '')
         .replace(/\s+helper =[^}]+};/, '')

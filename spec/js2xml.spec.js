@@ -13,32 +13,30 @@ describe('js2xml', function description() {
       const fixture = fixtues.shift();
       it(`js2xml: spec/fixtures/${fixture}.xml`, (done) => {
         $.get(`./fixtures/${fixture}.xml`, (xmlContent) => {
-            $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
-              const t1 = Date.now();
-              XMLLite.js2xml(jsonContent);
-              const time = Date.now() - t1;
-              const count = countElements(jsonContent);
-              console.log(
-                `%cjs2xml: %c%sms %cto render %c%s %celements in fixture ${fixture}.`,
-                'font-weight: bold; color: blue;',
-                'font-weight: bold; color: green;',
-                leftPad(time, 3),
-                'font-weight: normal; color: black;',
-                'font-weight: bold; color: red;',
-                leftPad(count, 4),
-                'font-weight: normal; color: black;'
-              );
+          $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
+            const t1 = Date.now();
+            XMLLite.js2xml(jsonContent);
+            const time = Date.now() - t1;
+            const count = countElements(jsonContent);
+            console.log(
+              `%cjs2xml: %c%sms %cto render %c%s %celements in fixture ${fixture}.`,
+              'font-weight: bold; color: blue;',
+              'font-weight: bold; color: green;',
+              leftPad(time, 3),
+              'font-weight: normal; color: black;',
+              'font-weight: bold; color: red;',
+              leftPad(count, 4),
+              'font-weight: normal; color: black;'
+            );
 
-              assert.equal(
-                XMLLite.js2xml(jsonContent),
-                XMLLite.uglify(xmlContent),
-                `test case by fixture ${fixture} not passed`
-              );
-              done();
-            });
-          },
-          'text'
-        );
+            assert.equal(
+              XMLLite.js2xml(jsonContent),
+              XMLLite.uglify(xmlContent),
+              `test case by fixture ${fixture} not passed`
+            );
+            done();
+          });
+        }, 'text');
       });
       nextFixture(fixtues);
     }

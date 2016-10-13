@@ -1,4 +1,5 @@
 import XMLLite from 'xml-lite';
+import $ from 'jquery';
 
 const assert = chai.assert;
 
