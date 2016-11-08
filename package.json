@@ -1,6 +1,6 @@
 {
   "name": "xml-lite",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "maintaining xml in pure javascript (IN BOTH NODE.JS & BROWSERS) ",
   "author": "leungwensen",
   "homepage": "https://github.com/leungwensen/xml-lite#readme",
@@ -35,6 +35,7 @@
     "sync-cnpm": "cnpm sync xml-lite"
   },
   "dependencies": {
+    "commander": "~2.9.0",
     "xmldom": "~0.1.22",
     "zero-lang": "~0.2.1"
   },
@@ -44,7 +45,6 @@
     "babel-loader": "~6.2.5",
     "babel-preset-es2015": "~6.14.0",
     "chai": "~3.5.0",
-    "commander": "~2.9.0",
     "css-loader": "~0.24.0",
     "cssnano": "~3.7.4",
     "eslint": "~3.3.1",
