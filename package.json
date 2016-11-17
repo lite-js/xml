@@ -1,6 +1,6 @@
 {
   "name": "xml-lite",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "maintaining xml in pure javascript (IN BOTH NODE.JS & BROWSERS) ",
   "author": "leungwensen",
   "homepage": "https://github.com/leungwensen/xml-lite#readme",
@@ -26,12 +26,14 @@
   "scripts": {
     "build-doc": "zfinder build",
     "eslint": "gulp eslint",
+    "pack": "gulp pack",
     "publish-all": "npm run push-all && npm publish && npm run sync-cnpm",
     "push-all": "npm run push-master && npm run push-tags && npm run push-gh-pages",
     "push-gh-pages": "git checkout gh-pages && git merge master && git push && git checkout master",
     "push-master": "git checkout master && git push",
     "push-tags": "git push --tag",
-    "start": "zfinder serve",
+    "serve-doc": "zfinder serve",
+    "start": "gulp",
     "sync-cnpm": "cnpm sync xml-lite"
   },
   "dependencies": {
@@ -85,8 +87,7 @@
     "zfinder": "~0.2.9"
   },
   "precommit": {
-    "run": [
-    ],
+    "run": [],
     "silent": false
   }
 }

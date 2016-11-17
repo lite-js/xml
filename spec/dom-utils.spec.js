@@ -56,6 +56,17 @@ describe('dom-utils', () => {
       );
     });
 
+    // #16
+    it('dom-utils: findChildNodes(doc, query) on an element that has no childNodes', () => {
+      assert.equal(
+        XMLLite.findChildNodes(doc.childNodes[0], {
+          tagName: 'book'
+        }).length,
+        0,
+        'XMLLite.findChildNodes(doc, query) not working: result nodes count not matching.'
+      );
+    });
+
     it('dom-utils: createChildNode(doc, query)', () => {
       assert.equal(
         // cannot call this on #document, because Only one element on document allowed.
