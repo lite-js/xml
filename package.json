@@ -87,7 +87,9 @@
     "zfinder": "~0.2.9"
   },
   "precommit": {
-    "run": [],
+    "run": [
+      "eslint"
+    ],
     "silent": false
   }
 }
