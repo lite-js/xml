@@ -5,7 +5,7 @@ import leftPad from './left-pad';
 
 const assert = chai.assert;
 
-describe('xml2js', () => {
+describe('xml2js', function testCase() {
   this.timeout(10000); // 10 seconds before timeout
 
   function nextFixture(fixtues) {
@@ -13,6 +13,7 @@ describe('xml2js', () => {
       const fixture = fixtues.shift();
       it(`xml2js: spec/fixtures/${fixture}.xml`, (done) => {
         $.get(`./fixtures/${fixture}.xml`, (xmlContent) => {
+          xmlContent = XMLLite.uglify(xmlContent, true);
           // console.log(XMLLite.parse(xmlContent).lastChild);
           $.get(`./fixtures/${fixture}.json`, (jsonContent) => {
             const t1 = Date.now();

@@ -12,6 +12,7 @@ import './index.less';
 
 const $xml = $('#xml-textarea');
 const $json = $('#json-textarea');
+const $parserStatus = $('#parser-status');
 
 const editorOptions = {
   foldGutter: true,
@@ -30,13 +31,29 @@ const jsonEditor = CodeMirror.fromTextArea($json[0], lang.extend({
   mode: 'javascript',
 }, editorOptions));
 
+function setParserStatus(error) {
+  if (error) {
+    $parserStatus
+      .removeClass('success')
+      .addClass('error')
+      .html(error);
+  } else {
+    $parserStatus
+      .removeClass('error')
+      .addClass('success')
+      .html('success');
+  }
+}
+
 function xml2json() {
   const xmlContent = xmlEditor.getValue();
   try {
     const json = XMLLite.xml2json(xmlContent, null, 2);
     jsonEditor.getDoc().setValue(json);
+    setParserStatus();
   } catch (e) {
     console.log(e);
+    setParserStatus(e);
   }
 }
 function json2xml() {
@@ -46,8 +63,10 @@ function json2xml() {
       beautify: true,
     });
     xmlEditor.getDoc().setValue(xml);
+    setParserStatus();
   } catch (e) {
     console.log(e);
+    setParserStatus(e);
   }
 }
 

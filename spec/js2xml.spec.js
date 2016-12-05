@@ -5,7 +5,7 @@ import leftPad from './left-pad';
 
 const assert = chai.assert;
 
-describe('js2xml', () => {
+describe('js2xml', function testCase() {
   this.timeout(10000); // 10 seconds before timeout
 
   function nextFixture(fixtues) {
