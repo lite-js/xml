@@ -88,4 +88,6 @@ import XMLLite from 'xml-lite/lib/index-browser';
 
 ## [Contributing](./doc/contributing.md)
 
+## [known issues](https://github.com/leungwensen/xml-lite/issues)
+
 [homepage]: https://leungwensen.github.io/xml-lite/
