@@ -14,6 +14,8 @@ const $xml = $('#xml-textarea');
 const $json = $('#json-textarea');
 const $parserStatus = $('#parser-status');
 
+XMLLite.keepDoubleQuotes = true;
+
 const editorOptions = {
   foldGutter: true,
   gutters: [

@@ -1,4 +1,3 @@
-<% var attrs = lang.keys(attributes); %>
-<<%- tag %><% if (attrs.length) { %> <%= ' ' + lang.map(attrs, function (attr) { return attr + '="' + attributes[attr] + '"'; }).join(' ') %><% } %>>
+<<%- tag %><%- stringifiedAttributes %>>
   <%= content %>
 </<%- tag %>>
