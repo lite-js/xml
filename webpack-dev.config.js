@@ -1,7 +1,7 @@
-const lang = require('zero-lang');
+const _ = require('lodash');
 const webpackConf = require('./webpack.config');
 
-module.exports = lang.extend({
+module.exports = _.extend({
   devServer: {
     stats: {
       cached: false,

@@ -1,6 +1,0 @@
-openOnStart: true
-port: 2016
-build:
-  assetsServer: https://leungwensen.github.io/zfinder
-  basenameMap:
-    README.md: doc.html

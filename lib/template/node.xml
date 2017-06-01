@@ -1,3 +1,0 @@
-<<%- tag %><%- stringifiedAttributes %>>
-  <%= content %>
-</<%- tag %>>

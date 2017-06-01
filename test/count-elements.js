@@ -1,10 +1,4 @@
-'use strict';
-/**
- * count-elements module
- * @module count-elements
- * @see module:index
- */
-import lang from 'zero-lang';
+import each from 'lodash/each';
 
 module.exports = (elements) => {
   let count = 0;
@@ -14,7 +8,7 @@ module.exports = (elements) => {
       count++;
     }
     if (obj.children) {
-      lang.each(obj.children, (child) => {
+      each(obj.children, (child) => {
         countOne(child);
       });
     }

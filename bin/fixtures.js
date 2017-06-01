@@ -1,12 +1,6 @@
 #!/usr/bin/env node
-'use strict';
-/**
- * fixtures-xml2js module
- * @module fixtures-xml2js
- * @see module:index
- */
 const fs = require('fs');
-const lang = require('zero-lang');
+const _ = require('lodash');
 const path = require('path');
 const XMLLite = require('../lib/index');
 
@@ -19,7 +13,7 @@ const files = [];
 
 fs.readdir(path.resolve(__dirname, '../spec/fixtures'), (err, filenames) => {
   if (err) throw err;
-  lang.each(filenames, (filename) => {
+  _.each(filenames, (filename) => {
     if (!/\.xml$/.test(filename)) return;
     const basename = filename.replace(/\.xml$/, '');
     files.push(basename);
