@@ -1,58 +1,60 @@
-import XMLLite from 'xml-lite';
-
-const assert = chai.assert;
+/* eslint-env mocha */
+const {
+  throws
+} = require('assert')
+const XMLLite = require('../../indexBrowser')
 
 describe('error tracking', () => {
   it('XMLLite.parse(): invalid xml', () => {
-    assert.throws(
+    throws(
       () => {
-        XMLLite.parse('some text');
+        XMLLite.parse('some text')
       },
       'invalid XML'
-    );
-    assert.throws(
+    )
+    throws(
       () => {
-        XMLLite.parse('<xx');
+        XMLLite.parse('<xx')
       },
       'invalid XML'
-    );
-    assert.throws(
+    )
+    throws(
       () => {
-        XMLLite.parse('<test/><!--');
+        XMLLite.parse('<test/><!--')
       },
       'invalid XML'
-    );
-  });
+    )
+  })
   it('XMLLite.parse(): empty document', () => {
-    assert.throws(
+    throws(
       () => {
-        XMLLite.parse('');
+        XMLLite.parse('')
       },
       'invalid XML'
-    );
-  });
+    )
+  })
   it('XMLLite.parse(): unclosed tag', () => {
-    assert.throws(
+    throws(
       () => {
-        XMLLite.parse('<img>');
+        XMLLite.parse('<img>')
       },
       'invalid XML'
-    );
-  });
+    )
+  })
   it('XMLLite.parse(): attribute missing qute', () => {
-    assert.throws(
+    throws(
       () => {
-        XMLLite.parse('<img src=1/>');
+        XMLLite.parse('<img src=1/>')
       },
       'invalid XML'
-    );
-  });
+    )
+  })
   it('XMLLite.parse(): invalid attribute', () => {
-    assert.throws(
+    throws(
       () => {
-        XMLLite.parse('<img src="<>&"/>');
+        XMLLite.parse('<img src="<>&"/>')
       },
       'invalid XML'
-    );
-  });
-});
+    )
+  })
+})

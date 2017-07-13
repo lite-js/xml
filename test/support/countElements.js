@@ -1,19 +1,19 @@
-import each from 'lodash/each';
+const each = require('lodash/each')
 
 module.exports = (elements) => {
-  let count = 0;
+  let count = 0
 
-  function countOne(obj) {
+  function countOne (obj) {
     if (obj.type !== 'Document' && obj.type !== 'TextNode') {
-      count++;
+      count++
     }
     if (obj.children) {
       each(obj.children, (child) => {
-        countOne(child);
-      });
+        countOne(child)
+      })
     }
   }
 
-  countOne(elements);
-  return count;
-};
+  countOne(elements)
+  return count
+}
