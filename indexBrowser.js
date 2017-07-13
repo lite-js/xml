@@ -1,5 +1,5 @@
+/* eslint-env browser */
 const assignIn = require('lodash/assignIn')
-const xmldom = require('xmldom')
 const dom2js = require('./lib/dom2js')
 const dom2json = require('./lib/dom2json')
 const escape = require('./lib/escape')
@@ -13,14 +13,10 @@ const xml2js = require('./lib/xml2js')
 const xml2json = require('./lib/xml2json')
 
 assignIn(xml, {
-  ENV: 'node',
+  ENV: 'browser',
   dom2js,
   dom2json,
-  domParser: new xmldom.DOMParser({
-    errorHandler: (err) => {
-      throw err
-    }
-  }),
+  domParser: new DOMParser(),
   escape,
   getInnerXML,
   getOuterXML: xml.serialize,
@@ -30,7 +26,7 @@ assignIn(xml, {
   unescape,
   xml2js,
   xml2json,
-  xmlSerializer: new xmldom.XMLSerializer()
+  xmlSerializer: new XMLSerializer()
 })
 
 module.exports = xml
