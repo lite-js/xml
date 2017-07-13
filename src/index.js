@@ -6,7 +6,7 @@
  */
 import $ from 'jquery'
 import CodeMirror from 'codemirror'
-import XMLLite from 'xml-lite'
+import XMLLite from '@lite-js/xml'
 import assignIn from 'lodash/assignIn'
 import './index.less'
 
@@ -83,7 +83,7 @@ jsonEditor.on('change', () => {
   }
 })
 
-$.get('./spec/fixtures/bookstore.xml', (xmlContent) => {
+$.get('./test/fixtures/bookstore.xml', (xmlContent) => {
   xmlEditor.getDoc().setValue(xmlContent)
   xml2json()
 }, 'text')

@@ -1,5 +1,7 @@
-xml-lite
-========
+xml
+===
+
+[![npm version](https://badge.fury.io/js/%40lite-js%2Fxml.svg)](https://badge.fury.io/js/%40lite-js%2Fxml) [![Build Status](https://travis-ci.org/lite-js/xml.svg?branch=master)](https://travis-ci.org/lite-js/xml)
 
 **Maintaining XML** in pure javascript (IN BOTH NODE.JS & BROWSERS) [Homepage][homepage]
 
@@ -90,4 +92,4 @@ import XMLLite from 'xml-lite/lib/index-browser';
 
 ## [known issues](https://github.com/leungwensen/xml-lite/issues)
 
-[homepage]: https://leungwensen.github.io/xml-lite/
+[homepage]: https://lite-js.github.io/xml/
