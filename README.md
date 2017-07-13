@@ -38,10 +38,10 @@ Actually, you can get the js object from `XMLLite.xml2js(xml)`, do whatever you 
 1. A reasonable need for usage in both Node.js and Browsers
 2. A more reasonable need to use native APIs(DOMParser/XMLSerializer) to speed up the maintaining process and keep the library thin
 
-## Why `xml-lite`?
+## Why `@lite-js/xml`?
 
 1. It **works exactly the same in both Node.js and Browsers**
-2. The browser version is supper **light-weight**([dist/xml-lite.js](./dist/xml-lite.js))
+2. The browser version is supper **light-weight**([dist/xml.js](./dist/xml.js))
 3. **Convenient** APIs for converting between xml/js/json/DOM, and lots of helpers to maintain the data structures
 4. Super **fast**. it takes less than 30ms to convert an xml document with over 1,000 nodes into a js object
 
@@ -57,7 +57,7 @@ $ npm install @lite-js/xml -g
 In Node.js
 
 ```javascript
-const XMLLite = require('xml-lite');
+const XML = require('@lite-js/xml');
 ```
 
 Command line client
@@ -69,13 +69,13 @@ $ xml-lite --help
 In browsers
 
 ```html
-<script src="$path/to/xml-lite/dist/xml-lite.js"> <!-- window.XMLLite is available -->
+<script src="$path/to/@lite-js/xml/dist/xml.js"> <!-- window.XML is available -->
 ```
 
 In browsers with webpack
 
 ```javascript
-import XMLLite from 'xml-lite/lib/index-browser';
+import XMLLite from '@lite-js/xml/indexBrowser';
 ```
 
 ## [Demo][homepage]
@@ -84,10 +84,10 @@ import XMLLite from 'xml-lite/lib/index-browser';
 
 ## [JSON spec](./doc/json-spec.md)
 
-## [Projects using xml-lite](./doc/projects-using-xml-lite.md)
+## [Projects using @lite-js/xml](./doc/projects-using-xml-lite.md)
 
 ## [Contributing](./doc/contributing.md)
 
-## [known issues](https://github.com/leungwensen/xml-lite/issues)
+## [known issues](https://github.com/lite-js/xml/issues)
 
 [homepage]: https://lite-js.github.io/xml/
