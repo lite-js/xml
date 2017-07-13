@@ -23,17 +23,17 @@ const editorOptions = {
     'CodeMirror-foldgutter'
   ],
   lineNumbers: true,
-  lineWrapping: true,
+  lineWrapping: true
 }
 
 const xmlEditor = CodeMirror.fromTextArea($xml[0], assignIn({
-  mode: 'text/xml',
+  mode: 'text/xml'
 }, editorOptions))
 const jsonEditor = CodeMirror.fromTextArea($json[0], assignIn({
-  mode: 'javascript',
+  mode: 'javascript'
 }, editorOptions))
 
-function setParserStatus(error) {
+function setParserStatus (error) {
   if (error) {
     $parserStatus
       .removeClass('success')
@@ -47,7 +47,7 @@ function setParserStatus(error) {
   }
 }
 
-function xml2json() {
+function xml2json () {
   const xmlContent = xmlEditor.getValue()
   try {
     const json = XMLLite.xml2json(xmlContent, null, 2)
@@ -58,11 +58,11 @@ function xml2json() {
     setParserStatus(e)
   }
 }
-function json2xml() {
+function json2xml () {
   const jsonContent = jsonEditor.getValue()
   try {
     const xml = XMLLite.json2xml(jsonContent, {
-      beautify: true,
+      beautify: true
     })
     xmlEditor.getDoc().setValue(xml)
     setParserStatus()

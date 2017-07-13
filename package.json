@@ -1,5 +1,5 @@
 {
-  "name": "xml-lite",
+  "name": "@lite-js/xml",
   "version": "0.0.1",
   "description": "Maintaining XML in Pure Javascript (IN BOTH NODE.JS & BROWSERS)",
   "license": "MIT",
@@ -23,12 +23,34 @@
   "bin": {
     "xml-lite": "./bin/xml-lite.js"
   },
+  "pre-commit": {
+    "run": [
+      "lint",
+      "test"
+    ],
+    "silent": false
+  },
   "scripts": {
-    "test": ""
+    "coverage": "npm run coverage-generator && npm run coverage-viewer",
+    "coverage-viewer": "torch-coverage",
+    "coverage-generator": "torch --coverage --renderer --source-pattern indexBrowser.js,lib/**/*.js --recursive test/renderer",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "torch --renderer --recursive test/renderer",
+    "test-live": "torch --interactive --watch --recursive test/renderer"
+  },
+  "standard": {
+    "ignore": [
+      "dist/"
+    ]
   },
   "dependencies": {
     "lodash": "^4.17.4",
     "xmldom": "~0.1.28"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@lite-js/torch": "^0.1.5",
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.2"
+  }
 }

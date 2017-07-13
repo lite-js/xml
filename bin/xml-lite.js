@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-'use strict';
+'use strict'
 /**
  * json2xml module
  * @module json2xml
  * @see module:index
  */
-const commander = require('commander');
-const fs = require('fs');
-const path = require('path');
-const XMLLite = require('../lib/index');
+const commander = require('commander')
+const fs = require('fs')
+const path = require('path')
+const XMLLite = require('../lib/index')
 
 // xml2json
 commander
@@ -18,10 +18,10 @@ commander
   .option('--space [space]', 'space')
   .action((xml, options) => {
     fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
-      if (err) throw err;
-      console.log(XMLLite.xml2json(content, options.replacer, options.space));
-    });
-  });
+      if (err) throw err
+      console.log(XMLLite.xml2json(content, options.replacer, options.space))
+    })
+  })
 
 // json2xml
 commander
@@ -33,10 +33,10 @@ commander
   .option('--preserveComments', 'preserve comments')
   .action((json, options) => {
     fs.readFile(path.resolve(process.cwd(), json), 'utf8', (err, content) => {
-      if (err) throw err;
-      console.log(XMLLite.json2xml(content, options));
-    });
-  });
+      if (err) throw err
+      console.log(XMLLite.json2xml(content, options))
+    })
+  })
 
 // beautify
 commander
@@ -45,11 +45,11 @@ commander
   .option('--indent [indent]', 'indent', '  ')
   .action((xml, options) => {
     fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
-      if (err) throw err;
-      console.log(XMLLite.beautify(content, options.indent));
+      if (err) throw err
+      console.log(XMLLite.beautify(content, options.indent))
       // XMLLite.beautify(content, options.indent);
-    });
-  });
+    })
+  })
 
 // uglify
 commander
@@ -58,12 +58,12 @@ commander
   .option('--preserveComments', 'preserve comments')
   .action((xml, options) => {
     fs.readFile(path.resolve(process.cwd(), xml), 'utf8', (err, content) => {
-      if (err) throw err;
-      console.log(XMLLite.uglify(content, options.preserveComments));
-    });
-  });
+      if (err) throw err
+      console.log(XMLLite.uglify(content, options.preserveComments))
+    })
+  })
 
 // execute client
-commander.parse(process.argv);
+commander.parse(process.argv)
 
-if (process.argv.length === 2) commander.outputHelp();
+if (process.argv.length === 2) commander.outputHelp()
