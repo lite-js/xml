@@ -48,8 +48,8 @@ Actually, you can get the js object from `XMLLite.xml2js(xml)`, do whatever you 
 ## Install
 
 ```shell
-$ npm install xml-lite --save
-$ npm install xml-lite -g
+$ npm install @lite-js/xml --save
+$ npm install @lite-js/xml -g
 ```
 
 ## Usage
