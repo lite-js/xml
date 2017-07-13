@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "xmldom": "~0.1.28"
+    "xmldom": "^0.1.27"
   },
   "devDependencies": {
     "@lite-js/torch": "^0.1.5",
