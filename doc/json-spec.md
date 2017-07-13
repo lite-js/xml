@@ -3,13 +3,13 @@ JSON data structure spec
 
 ## example
 
-* [bookstore.json](../spec/fixtures/bookstore.json)
-* [cd-catalog.json](../spec/fixtures/cd-catalog.json)
-* [large.json](../spec/fixtures/large.json)
-* [menu.json](../spec/fixtures/menu.json)
-* [mmap-content.json](../spec/fixtures/mmap-content.json)
-* [note.json](../spec/fixtures/note.json)
-* [svg.json](../spec/fixtures/svg.json)
+* [bookstore.json](../test/fixtures/bookstore.json)
+* [cd-catalog.json](../test/fixtures/cd-catalog.json)
+* [large.json](../test/fixtures/large.json)
+* [menu.json](../test/fixtures/menu.json)
+* [mmap-content.json](../test/fixtures/mmap-content.json)
+* [note.json](../test/fixtures/note.json)
+* [svg.json](../test/fixtures/svg.json)
 
 ## nodes
 

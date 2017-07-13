@@ -84,8 +84,6 @@ import XMLLite from 'xml-lite/lib/index-browser';
 
 ## [JSON spec](./doc/json-spec.md)
 
-## [Roadmap](./doc/roadmap.md)
-
 ## [Projects using xml-lite](./doc/projects-using-xml-lite.md)
 
 ## [Contributing](./doc/contributing.md)

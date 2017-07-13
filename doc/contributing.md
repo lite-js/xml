@@ -8,18 +8,17 @@ Contributing
 ### Dev Server
 
 ```shell
-$ gulp
+$ npm run dev
 ```
 
 Start a development server, pages below would be activated (file changes will trigger building automatically).
 
-* Homepage: http://127.0.0.1:2047/
-* Tests: http://127.0.0.1:2047/spec/
+* Homepage: http://127.0.0.1:8080/
 
 ### Building(Packing)
 
 ```shell
-$ gulp pack
+$ npm run build
 ```
 
 Packing, generates products into directory `/dist`.
@@ -27,22 +26,17 @@ Packing, generates products into directory `/dist`.
 ### Linting
 
 ```shell
-$ gulp lint
-# equals gulp eslint && gulp htmlhint
+$ npm run lint
 ```
 
-Linting.
-
-### Templates
+### testing
 
 ```shell
-$ gulp template2module
+$ npm run test
 ```
 
-Converting templates (`/src/template/*` and `/lib/template/*`) into js modules.
+> interactive mode
 
-### Others
-
-* `$ gulp commonjs2es6` (be careful)
-* `$ gulp jsdoc`
-* `$ gulp svg-sprite` (not ready yet)
+```shell
+$ npm run test-live
+```
