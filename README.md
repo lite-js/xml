@@ -1,7 +1,7 @@
 xml
 ===
 
-[![npm version](https://badge.fury.io/js/%40lite-js%2Fxml.svg)](https://badge.fury.io/js/%40lite-js%2Fxml) [![Build Status](https://travis-ci.org/lite-js/xml.svg?branch=master)](https://travis-ci.org/lite-js/xml)
+[![npm version](https://badge.fury.io/js/%40lite-js%2Fxml.svg)](https://badge.fury.io/js/%40lite-js%2Fxml) [![Build Status](https://travis-ci.org/lite-js/xml.svg?branch=master)](https://travis-ci.org/lite-js/xml) [![Coverage Status](https://coveralls.io/repos/github/lite-js/xml/badge.svg?branch=master)](https://coveralls.io/github/lite-js/xml?branch=master)
 
 **Maintaining XML** in pure javascript (IN BOTH NODE.JS & BROWSERS) [Homepage][homepage]
 
