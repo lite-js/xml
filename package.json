@@ -1,6 +1,6 @@
 {
   "name": "@lite-js/xml",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Maintaining XML in Pure Javascript (IN BOTH NODE.JS & BROWSERS)",
   "license": "MIT",
   "main": "index.js",

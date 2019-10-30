@@ -4,7 +4,9 @@ const dom2js = require('./lib/dom2js')
 const dom2json = require('./lib/dom2json')
 const escape = require('./lib/escape')
 const getInnerXML = require('./lib/getInnerXml')
+const js2dom = require('./lib/js2dom')
 const js2xml = require('./lib/js2xml')
+const json2dom = require('./lib/json2dom')
 const json2xml = require('./lib/json2xml')
 const sanitize = require('./lib/sanitize')
 const unescape = require('./lib/unescape')
@@ -24,7 +26,9 @@ assignIn(xml, {
   escape,
   getInnerXML,
   getOuterXML: xml.serialize,
+  js2dom,
   js2xml,
+  json2dom,
   json2xml,
   sanitize,
   unescape,
